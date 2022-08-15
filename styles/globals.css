@@ -1,3 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.checkbox:checked + .label .ball {
+  transform: translateX(16px);
+}
+
+@layer components {
+  .navLink {
+    @apply font-poppins font-semibold text-sm hover:text-dark-1 dark:hover:text-gray-1 mx-3 transition-all transform duration-150 active:brightness-110;
+  }
+
+  /* Mobile Nav */
+  .menuItems {
+    @apply fixed right-0 top-5 w-screen min-w-full h-[450px]  origin-top-right shadow-xl rounded-b-md
+    focus:ring-0 outline-none border-none text-gray-500 bg-white mt-3 flex flex-col items-center 
+    justify-evenly dark:bg-stone-800 dark:text-gray-300 list-none;
+  }
+  .dropdownIcon {
+    @apply w-7 font-poppins font-semibold text-sm hover:text-dark-1 dark:hover:text-gray-1 mx-3 transition-all transform duration-150 active:brightness-110;
+  }
+}
