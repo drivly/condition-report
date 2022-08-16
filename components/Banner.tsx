@@ -27,11 +27,12 @@ const Banner = ({ bannerText, wrapperStyle, bodyStyle, image }: Props) => {
             layout="fill"
             objectFit="cover"
             priority
+            is="image"
           />
         </>
       )}
-      <div className="h-96 bg-gradient-to-l from-transparent to-black/60 absolute w-full bottom-0 right-0" />
-      <h1 className={`font-bold text-4xl font-poppins leading-70 ${bodyStyle}`}>
+      <div className="h-96 bg-gradient-to-l from-transparent to-black/70 absolute w-full bottom-0 right-0" />
+      <h1 className={`font-bold text-4xl ${bodyStyle}`}>
         {bannerText}
       </h1>
       <div className="absolute w-48 h-48 sm:w-32 sm:h-32 rounded-full bg-white/20 -top-9 -left-16 -z-5" />

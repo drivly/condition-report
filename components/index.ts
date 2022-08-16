@@ -4,6 +4,11 @@ import Navbar from "./Navbar";
 import MobileNav from "./MobileNav"
 import MyLink from "./MyLink";
 import Banner from "./Banner"
-import AutoCardLarge from "./AutoCardLarge";
+import AutoCard from "./AutoCard";
+import SectionTitle from "./SectionTitle";
+import DarkModeToggle from "./DarkModeToggle";
+import VehicleDetails from "./VehicleDetails";
+import ManexIcon from "./ManexIcon";
+import OffsiteNotes from "./OffsiteNotes";
 
-export { AppProviders, Footer, Navbar, MobileNav, MyLink, Banner, AutoCardLarge }
+export { AppProviders, Footer, Navbar, MobileNav, MyLink, Banner, AutoCard, SectionTitle, DarkModeToggle, VehicleDetails, ManexIcon, OffsiteNotes }

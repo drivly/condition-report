@@ -12,7 +12,7 @@ const MyLink = React.forwardRef(({ href, name, active, ...rest }, ref) => {
         className={`navLink ${
           asPath === href || active
             ? "text-dark-1 dark:text-gray-1"
-            : "dark:text-zinc-600 text-gray-400"
+            : "text-gray-6"
         }`}>
         {name}
       </a>

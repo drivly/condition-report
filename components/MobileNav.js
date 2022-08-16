@@ -1,18 +1,16 @@
 import { Menu, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { Fragment } from "react";
-
 import { menuItems } from "lib/menuItems";
 import MyLink from "./MyLink";
 
-
-export default function Dropdown() {
+export default function MobileNav() {
   return (
     <div className="text-right">
       <Menu as="div" className="relative flex">
         {({ open }) => (
           <>
-            <Menu.Button className="dark:text-zinc-600 text-gray-400">
+            <Menu.Button className="text-gray-6">
               {!open ? (
                 <MenuIcon className="dropdownIcon" aria-hidden="true" />
               ) : (

@@ -5,7 +5,7 @@ interface Props {
   vehicle: Vehicle;
 }
 
-const AutoCardLarge = ({ vehicle }: Props) => {
+const AutoCard = ({ vehicle }: Props) => {
   return (
     <Link href={`/vehicle/[id]`} as={`/vehicle/${vehicle.id}`}>
       <div className="cursor-pointer rounded-xl shadow-md group">
@@ -38,4 +38,4 @@ const AutoCardLarge = ({ vehicle }: Props) => {
   );
 };
 
-export default AutoCardLarge;
+export default AutoCard;
