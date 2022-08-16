@@ -12,7 +12,8 @@
     "offsiteAnnouncements": [],
     "offsiteRemarks": [],
     "titleInformation": {
-      "status": "NOT SPECIFIED",
+      "status": "PRESENT",
+      "state": "CA",
       "brandings": []
     },
     "vehicleDetails": {

@@ -31,7 +31,7 @@ const SectionTitle = ({ heading, title, Icon, grade }: Props) => {
       <div className="flex flex-1 items-center tracking-widest space-x-4 md:space-x-8">
         <div className="flex-1">
           <h1 className="uppercase text-gray-6 font-medium text-sm">{heading}</h1>
-          <h3 className="dark:text-gray-1 text-dark-1 text-3xl md:text-4xl font-bold leading-normal md:leading-normal">
+          <h3 className="dark:text-gray-1 text-dark-1 text-3xl md:text-4xl font-bold leading-normal md:leading-normal whitespace-nowrap">
             {title}
           </h3>
         </div>

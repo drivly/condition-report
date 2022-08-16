@@ -30,5 +30,5 @@ module.exports = {
       monty: ["Montserrat", "sans-serif"],
     },
   },
-  plugins: [],
+  plugins: [require('tailwind-scrollbar-hide')],
 };

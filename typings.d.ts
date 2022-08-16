@@ -14,6 +14,7 @@ export interface Vehicle {
   titleInformation: {
     brandings: [];
     status: string;
+    state?: string;
   };
   type: string;
   vehicleDetails: {

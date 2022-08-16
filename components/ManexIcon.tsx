@@ -3,10 +3,10 @@ import { Vehicle } from "typings";
 import { ThumbDownIcon, ThumbUpIcon } from "@heroicons/react/solid";
 
 interface Props {
-  metaData: Vehicle['metaData']
+  vehicle: Vehicle;
 }
 
-const ManexIcon = ({ metaData }: Props) => {
+const ManexIcon = ({ vehicle: { metaData } }: Props) => {
   return (
     <div className="absolute top-4 right-0">
       {metaData.manex2021 === true ? (

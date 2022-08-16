@@ -10,5 +10,7 @@ import DarkModeToggle from "./DarkModeToggle";
 import VehicleDetails from "./VehicleDetails";
 import ManexIcon from "./ManexIcon";
 import OffsiteNotes from "./OffsiteNotes";
+import ImageGallery from "./ImageGallery";
+import TitleInfo from "./TitleInfo";
 
-export { AppProviders, Footer, Navbar, MobileNav, MyLink, Banner, AutoCard, SectionTitle, DarkModeToggle, VehicleDetails, ManexIcon, OffsiteNotes }
+export { AppProviders, Footer, Navbar, MobileNav, MyLink, Banner, AutoCard, SectionTitle, DarkModeToggle, VehicleDetails, ManexIcon, OffsiteNotes, ImageGallery, TitleInfo }

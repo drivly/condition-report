@@ -4,13 +4,12 @@ import { Vehicle } from "typings";
 import formatVehicleDetails from "utils/formatVehicleDetails";
 
 interface Props {
-  vehicleDetails: Vehicle["vehicleDetails"];
+  vehicle: Vehicle;
 }
 
-const VehicleDetails = ({ vehicleDetails }: Props) => {
+const VehicleDetails = ({ vehicle: { vehicleDetails } }: Props) => {
   return (
     <div className="flex flex-col justify-center text-xs md:text-sm text-gray-6 capitalize mt-2">
-      
       <p className="text-xs md:text-sm text-gray-6 capitalize">
         <span>{formatVehicleDetails(vehicleDetails.engine)}</span> •{" "}
         <span>{formatVehicleDetails(vehicleDetails.driveTrain)}</span> •{" "}
@@ -22,9 +21,7 @@ const VehicleDetails = ({ vehicleDetails }: Props) => {
       <p className="text-xs md:text-sm text-gray-6 flex items-center">
         {vehicleDetails.exteriorColor} on {vehicleDetails.interiorColor}
       </p>
-      <p>
-        {formatVehicleDetails(vehicleDetails.sellerName)}
-      </p>
+      <p>{formatVehicleDetails(vehicleDetails.sellerName)}</p>
     </div>
   );
 };
