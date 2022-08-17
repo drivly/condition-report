@@ -47,13 +47,23 @@ const Home = ({ vehicles }: Props) => {
 
 export default Home;
 
-export const getStaticProps: GetStaticProps = async () => {
+// export const getStaticProps: GetStaticProps = async () => {
+//   const response = await axios.get(`${baseUrl}/api/vehicles`);
+
+//   return {
+//     props: {
+//       vehicles: response.data,
+//     },
+//     revalidate: 60,
+//   };
+// };
+
+export const getServerSideProps = async () => {
   const response = await axios.get(`${baseUrl}/api/vehicles`);
 
   return {
     props: {
       vehicles: response.data,
     },
-    revalidate: 60,
   };
 };
