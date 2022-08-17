@@ -1,3 +1,3 @@
-const baseUrl = process.env.NODE_ENV === "production" ? process.env.VERCEL_URL : 'http://localhost:3000'
+const baseUrl = process.env.BASE_URL
 
 export default baseUrl
