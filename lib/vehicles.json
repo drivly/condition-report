@@ -1,0 +1,1457 @@
+[
+  {
+    "id": "1tE4nK",
+    "type": "third_party",
+    "grade": {
+      "value": 4.4,
+      "description": "Clean"
+    },
+    "metaData": {
+      "manex2021": true
+    },
+    "offsiteAnnouncements": [],
+    "offsiteRemarks": [],
+    "titleInformation": {
+      "status": "PRESENT",
+      "state": "CA",
+      "brandings": []
+    },
+    "vehicleDetails": {
+      "vin": "KMHGN4JE1FU060125",
+      "driveTrain": "ALL_WHEEL_DRIVE",
+      "engine": "6_CYLINDER",
+      "exteriorColor": "Parisian Gray",
+      "interiorColor": "Black",
+      "make": "Hyundai",
+      "model": "Genesis",
+      "odometer": 67904,
+      "sellerName": "SOUTH COUNTY BUICK GMC",
+      "transmission": "AUTOMATIC",
+      "trim": "3.8L",
+      "year": 2015
+    },
+    "images": [
+      "https://res.cloudinary.com/dtram9qiy/image/upload/v1660430632/genesis1_pjo6qo.png",
+      "https://res.cloudinary.com/dtram9qiy/image/upload/v1660430632/genesis3_tfu4aa.png",
+      "https://res.cloudinary.com/dtram9qiy/image/upload/v1660430632/genesis2_gc8j19.png",
+      "https://res.cloudinary.com/dtram9qiy/image/upload/v1660430632/genesis5_y728hx.png",
+      "https://res.cloudinary.com/dtram9qiy/image/upload/v1660430632/genesis4_bnnc9j.png",
+      "https://res.cloudinary.com/dtram9qiy/image/upload/v1660430632/genesis6_ou2hij.png"
+    ],
+    "inspectionSections": [
+      {
+        "name": "Drivability, Keys, & History",
+        "responses": [
+          {
+            "guid": "9c5ca492-7180-4f65-894d-4030a00a5e99",
+            "answers": [
+              {
+                "value": "1",
+                "answer": {
+                  "value": "1",
+                  "connotation": 0
+                }
+              }
+            ],
+            "question": {
+              "id": "10",
+              "buyerTranslation": "Smart Keys",
+              "section": "Drivability, Keys, & History"
+            }
+          },
+          {
+            "guid": "29731ce6-d35b-466d-9323-88a5d54c8edf",
+            "answers": [
+              {
+                "value": "0",
+                "answer": {
+                  "value": "0",
+                  "connotation": 0
+                }
+              }
+            ],
+            "question": {
+              "id": "15",
+              "buyerTranslation": "Other Keys",
+              "section": "Drivability, Keys, & History"
+            }
+          },
+          {
+            "guid": "ab0010e0-7817-434d-995f-17433bb77657",
+            "answers": [
+              {
+                "value": "None",
+                "answer": {
+                  "value": "None",
+                  "connotation": 0,
+                  "answerGroups": ["A"],
+                  "requiredQuestions": ["0cc67cdf-7a1b-4dc5-bc94-185782db8316"]
+                }
+              }
+            ],
+            "question": {
+              "id": "20",
+              "buyerTranslation": "Smoke/Bio/Environmental/History",
+              "section": "Drivability, Keys, & History"
+            }
+          },
+          {
+            "guid": "0cc67cdf-7a1b-4dc5-bc94-185782db8316",
+            "answers": [
+              {
+                "value": "Yes - Starts",
+                "answer": {
+                  "value": "Yes - Starts",
+                  "connotation": 0,
+                  "answerGroups": ["A"],
+                  "requiredQuestions": ["64d36bc5-6263-447f-83de-b548ce0db8d9"]
+                }
+              }
+            ],
+            "question": {
+              "id": "30",
+              "buyerTranslation": "Vehicle Starts",
+              "section": "Drivability, Keys, & History"
+            }
+          },
+          {
+            "guid": "64d36bc5-6263-447f-83de-b548ce0db8d9",
+            "answers": [
+              {
+                "value": "Yes - Drives",
+                "answer": {
+                  "value": "Yes - Drives",
+                  "connotation": 0,
+                  "answerGroups": ["A"],
+                  "requiredQuestions": ["d9698860-40c1-46b2-9ff3-fd087ab9fc21"]
+                }
+              }
+            ],
+            "question": {
+              "id": "40",
+              "buyerTranslation": "Vehicle Drives",
+              "section": "Drivability, Keys, & History"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Exterior",
+        "responses": [
+          {
+            "guid": "9409ce2f-6a67-40b0-834c-c5a31533b59f",
+            "answers": [
+              {
+                "value": "No DAMAGE",
+                "answer": {
+                  "value": "No Damage",
+                  "connotation": 0,
+                  "answerGroups": ["A"]
+                }
+              }
+            ],
+            "question": {
+              "id": "250",
+              "buyerTranslation": "Front Exterior",
+              "section": "Exterior"
+            }
+          },
+          {
+            "guid": "c10dae02-630b-4589-b2a3-d2eacd81b15d",
+            "answers": [
+              {
+                "value": "No Damage",
+                "answer": {
+                  "value": "No Damage",
+                  "connotation": 0,
+                  "answerGroups": ["A"]
+                }
+              }
+            ],
+            "question": {
+              "id": "320",
+              "buyerTranslation": "Driver Exterior",
+              "section": "Exterior"
+            }
+          },
+          {
+            "guid": "38462f5d-d3be-45c3-bd8b-a92ea6a423ae",
+            "answers": [
+              {
+                "value": "No Damage",
+                "answer": {
+                  "value": "No Damage",
+                  "connotation": 0,
+                  "answerGroups": ["A"]
+                }
+              }
+            ],
+            "question": {
+              "id": "420",
+              "buyerTranslation": "Roof - Exterior",
+              "section": "Exterior"
+            }
+          },
+          {
+            "guid": "005a176d-77db-4a19-b774-56615307dcc9",
+            "answers": [
+              {
+                "value": "No Damage",
+                "answer": {
+                  "value": "No Damage",
+                  "connotation": 0,
+                  "answerGroups": ["A"]
+                }
+              }
+            ],
+            "question": {
+              "id": "480",
+              "buyerTranslation": "Rear Exterior",
+              "section": "Exterior"
+            }
+          },
+          {
+            "guid": "600c80a9-b9d2-452d-9416-6d5de861d45b",
+            "answers": [
+              {
+                "value": "No Damage",
+                "answer": {
+                  "value": "No Damage",
+                  "connotation": 0,
+                  "answerGroups": ["A"]
+                }
+              }
+            ],
+            "question": {
+              "id": "550",
+              "buyerTranslation": "Passenger Exterior",
+              "section": "Exterior"
+            }
+          },
+          {
+            "guid": "b2d9fb6a-c4b6-4650-9c2b-375b0309d0dd",
+            "answers": [
+              {
+                "value": "Wrap",
+                "notes": "Clear wrap on front bumper hood and fenders",
+                "answer": {
+                  "value": "Wrap",
+                  "showNotes": true,
+                  "notesLabel": "Vehicle has wrap over paint panels",
+                  "connotation": -1,
+                  "answerGroups": ["B"],
+                  "metaData": {
+                    "referenceId": "6501111",
+                    "artCode": {
+                      "itemCode": 2,
+                      "itemSubCode": 0,
+                      "damageCode": "DI",
+                      "severityCode": "RM"
+                    }
+                  }
+                }
+              }
+            ],
+            "question": {
+              "id": "660",
+              "buyerTranslation": "Other Body & Paint Issues",
+              "section": "Exterior"
+            }
+          },
+          {
+            "guid": "55776e24-61fb-4839-8e61-dfad901943ea",
+            "answers": [
+              {
+                "value": "N/A",
+                "answer": {
+                  "value": "N/A",
+                  "connotation": 0,
+                  "answerGroups": ["A"]
+                }
+              }
+            ],
+            "question": {
+              "id": "670",
+              "buyerTranslation": "Announcements",
+              "section": "Exterior"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Interior",
+        "responses": [
+          {
+            "guid": "0b8c56ca-8399-4733-a76f-b1a290ebf57e",
+            "answers": [
+              {
+                "value": "No Issues",
+                "answer": {
+                  "value": "No Issues",
+                  "connotation": 0,
+                  "answerGroups": ["A"]
+                }
+              }
+            ],
+            "question": {
+              "id": "80",
+              "buyerTranslation": "Airbags",
+              "section": "Interior"
+            }
+          },
+          {
+            "guid": "254becea-950c-4ca5-8031-d2f4e6bd9fa2",
+            "answers": [
+              {
+                "value": "Fully Functional",
+                "answer": {
+                  "value": "Fully Functional",
+                  "connotation": 0,
+                  "answerGroups": ["A"]
+                }
+              }
+            ],
+            "question": {
+              "id": "90",
+              "buyerTranslation": "Infotainment/Radio",
+              "section": "Interior"
+            }
+          },
+          {
+            "guid": "fea32825-dc23-45b7-99dc-32c4244652a5",
+            "answers": [
+              {
+                "value": "Fully Functional",
+                "answer": {
+                  "value": "Fully Functional",
+                  "connotation": 0,
+                  "answerGroups": ["A"]
+                }
+              }
+            ],
+            "question": {
+              "id": "100",
+              "buyerTranslation": "Climate Control",
+              "section": "Interior"
+            }
+          },
+          {
+            "guid": "50a583bc-51d4-4ec2-ad9f-77c5e53601e5",
+            "answers": [
+              {
+                "value": "Fully Functional",
+                "answer": {
+                  "value": "Fully Functional",
+                  "connotation": 0,
+                  "answerGroups": ["A"]
+                }
+              }
+            ],
+            "question": {
+              "id": "120",
+              "buyerTranslation": "Electrical Accessory",
+              "section": "Interior"
+            }
+          },
+          {
+            "guid": "ff0cf0ab-5b04-45b4-8a14-8bac5d17d375",
+            "answers": [],
+            "question": {
+              "id": "139",
+              "buyerTranslation": "Interior Cosmetic Damage",
+              "section": "Interior"
+            }
+          },
+          {
+            "guid": "b19e4d79-a264-498f-89d1-0f355469277d",
+            "answers": [
+              {
+                "value": "Torn",
+                "notes": "Driver door handle leather part tearing",
+                "answer": {
+                  "connotation": -1,
+                  "showNotes": true,
+                  "value": "Torn",
+                  "metaData": {
+                    "referenceId": "780908",
+                    "artCode": {
+                      "itemCode": 410,
+                      "itemSubCode": 1,
+                      "damageCode": "TN",
+                      "severityCode": "G4"
+                    },
+                    "takePhoto": {
+                      "type": "damage",
+                      "title": "Dash Panel Torn",
+                      "description": "Dash Panel Torn"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mechanical",
+        "responses": [
+          {
+            "guid": "917db670-097f-4841-bd93-127729726df6",
+            "answers": [
+              {
+                "value": "No Issues",
+                "answer": { "value": "No Issues", "connotation": 0 }
+              }
+            ],
+            "question": {
+              "id": "170",
+              "buyerTranslation": "Vehicle Smoke",
+              "section": "Mechanical"
+            }
+          },
+          {
+            "guid": "03baa3a8-1679-4c4e-89a1-6ffc6a74e59d",
+            "answers": [
+              {
+                "value": "No Issues",
+                "answer": {
+                  "value": "No Issues",
+                  "connotation": 0,
+                  "answerGroups": ["A"]
+                }
+              }
+            ],
+            "question": {
+              "id": "180",
+              "buyerTranslation": "Emissions/Catalytic/Exhaust",
+              "section": "Mechanical"
+            }
+          },
+          {
+            "guid": "4dfa088e-1b81-42a0-81e6-8feffd08e4c4",
+            "answers": [
+              {
+                "value": "No Issues",
+                "answer": { "value": "No Issues", "connotation": 0 }
+              }
+            ],
+            "question": {
+              "buyerTranslation": "Leaks From Engine or Undercarriage Area (Class 2 or 3)",
+              "id": "210",
+              "section": "Mechanical"
+            }
+          },
+          {
+            "guid": "9215cd5d-bdfe-4078-8d2b-fb3a3c33ef37",
+            "answers": [
+              {
+                "value": "No Issues",
+                "answer": { "value": "No Issues", "connotation": 0 }
+              }
+            ],
+            "question": {
+              "id": "220",
+              "buyerTranslation": "Engine Noise",
+              "section": "Mechanical"
+            }
+          },
+          {
+            "guid": "c60b2d1f-47fe-4a16-9860-619c0717ed15",
+            "answers": [
+              {
+                "value": "No Oil Sludge",
+                "answer": { "value": "No Oil Sludge", "connotation": 0 }
+              }
+            ],
+            "question": {
+              "id": "230",
+              "buyerTranslation": "Engine Oil Sludge",
+              "section": "Mechanical"
+            }
+          },
+          {
+            "guid": "eb9abc8b-c296-4a70-aa8f-cfb343225ed5",
+            "answers": [
+              {
+                "value": "N/A",
+                "answer": {
+                  "value": "N/A",
+                  "connotation": 0,
+                  "answerGroups": ["A"]
+                }
+              }
+            ],
+            "question": {
+              "id": "240",
+              "buyerTranslation": "Other Mechanical Comments",
+              "section": "Mechanical"
+            }
+          },
+          {
+            "guid": "d069982b-b577-4d39-a434-f0ab54d9caf7",
+            "answers": [
+              {
+                "value": "None",
+                "answer": {
+                  "value": "None",
+                  "connotation": 0,
+                  "answerGroups": ["A"]
+                }
+              }
+            ],
+            "question": {
+              "id": "245",
+              "buyerTranslation": "Suspension Modification",
+              "section": "Mechanical"
+            }
+          }
+        ]
+      },
+      {
+        "name": "OBD II & Warning Lights",
+        "responses": [
+          {
+            "guid": "d9698860-40c1-46b2-9ff3-fd087ab9fc21",
+            "answers": [
+              {
+                "notes": "No codes at the moment",
+                "value": "Yellow/Incomplete Monitors",
+                "answer": {
+                  "connotation": -1,
+                  "notesLabel": "*Required* Enter codes, comma separated \"PXXXX, PXXXX\"",
+                  "showNotes": true,
+                  "value": "Yellow/Incomplete Monitors"
+                },
+                "metaData": {
+                  "referenceId": "6083",
+                  "artCode": {
+                    "itemCode": 520,
+                    "itemSubCode": 92,
+                    "damageCode": "LS",
+                    "severityCode": "RE"
+                  },
+                  "takePhoto": {
+                    "type": "damage",
+                    "title": "Yellow OBD2 Codes",
+                    "description": "Yellow OBD2 Codes"
+                  }
+                }
+              }
+            ],
+            "question": {
+              "id": "60",
+              "buyerTranslation": "OBD II Lights & Codes",
+              "section": "OBD II & Warning Lights"
+            }
+          },
+          {
+            "guid": "6f3e2bd5-5bb7-4222-a8bc-4cd3fdec2e8e",
+            "answers": [
+              {
+                "value": "No Issues",
+                "answer": {
+                  "value": "No Issues",
+                  "connotation": 0,
+                  "answerGroups": ["A"]
+                }
+              }
+            ],
+            "question": {
+              "id": "70",
+              "buyerTranslation": "Warning Lights & Gauge Cluster",
+              "section": "OBD II & Warning Lights"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Tires & Rims",
+        "responses": [
+          {
+            "guid": "3bb285d8-b418-4025-bd30-930f2bb18697",
+            "answers": [
+              {
+                "value": "6/32\" or Above",
+                "answer": { "value": "6/32\" or Above", "connotation": 0 }
+              }
+            ],
+            "question": {
+              "id": "309",
+              "buyerTranslation": "Driver Front Tire Depth",
+              "section": "Tires & Rims"
+            }
+          },
+          {
+            "guid": "d0aeaa15-8742-44bd-8768-3af31ebdc2f9",
+            "answers": [
+              {
+                "value": "Rim Curb Rash",
+                "answer": {
+                  "answerGroups": ["C"],
+                  "connotation": -1,
+                  "value": "Rim Curb Rash",
+                  "takePhoto": {
+                    "type": "damage",
+                    "title": "LF Wheel Rim Curb Rash",
+                    "description": "LF Wheel Rim Curb Rash"
+                  },
+                  "metaData": {
+                    "referenceId": 310522,
+                    "artCode": {
+                      "itemCode": 120,
+                      "itemSubCode": 0,
+                      "damageCode": "CE",
+                      "severityCode": "G4"
+                    }
+                  }
+                }
+              }
+            ],
+            "question": {
+              "id": "310",
+              "buyerTranslation": "Driver Front Tire & Rim Issue",
+              "section": "Tires & Rims"
+            }
+          },
+          {
+            "guid": "9095fe36-7228-4dc3-9246-e6f8813ad350",
+            "answers": [
+              {
+                "value": "6/32\" or Above",
+                "answer": { "value": "6/32\" or Above", "connotation": 0 }
+              }
+            ],
+            "question": {
+              "id": "409",
+              "buyerTranslation": "Driver Rear Tire Depth",
+              "section": "Tires & Rims"
+            }
+          },
+          {
+            "guid": "7dc968f7-055f-468c-ba23-88da72942d36",
+            "answers": [
+              {
+                "value": "Rim Curb Rash",
+                "answer": {
+                  "value": "Rim Curb Rash",
+                  "answerGroups": ["C"],
+                  "connotation": -1,
+                  "metaData": {
+                    "referenceId": 410704,
+                    "artCode": {
+                      "itemCode": 190,
+                      "itemSubCode": 0,
+                      "damageCode": "CE",
+                      "severityCode": "G4"
+                    },
+                    "takePhoto": {
+                      "type": "damage",
+                      "title": "LR Wheel Rim Curb Rash",
+                      "description": "LR Wheel Rim Curb Rash"
+                    }
+                  }
+                }
+              }
+            ],
+            "question": {
+              "id": "410",
+              "buyerTranslation": "Driver Rear Tire & Rim Issue",
+              "section": "Tires & Rims"
+            }
+          },
+          {
+            "guid": "d7b97405-b66c-4bb6-ab9d-10fe4b663cd1",
+            "answers": [
+              {
+                "value": "6/32\" or Above",
+                "answer": { "value": "6/32\" or Above", "connotation": 0 }
+              }
+            ],
+            "question": {
+              "id": "539",
+              "buyerTranslation": "Passenger Rear Tire Depth",
+              "section": "Tires & Rims"
+            }
+          },
+          {
+            "guid": "5e567c7a-1579-4e54-a0cb-e9242b4999f4",
+            "answers": [
+              {
+                "value": "No Issues",
+                "answer": {
+                  "value": "No Issues",
+                  "connotation": 0,
+                  "answerGroups": ["A"]
+                }
+              }
+            ],
+            "question": {
+              "id": "540",
+              "buyerTranslation": "Passenger Rear Tire & Rim Issue",
+              "section": "Tires & Rims"
+            }
+          },
+          {
+            "guid": "9782eb61-37e2-4c5f-a6ae-62a6399a6d8d",
+            "answers": [
+              {
+                "value": "6/32\" or Above",
+                "answer": { "value": "6/32\" or Above", "connotation": 0 }
+              }
+            ],
+            "question": {
+              "id": "635",
+              "buyerTranslation": "Passenger Front Tire Depth",
+              "section": "Tires & Rims"
+            }
+          },
+          {
+            "guid": "d12e8cde-8a51-49aa-8660-8ae5cd808ec3",
+            "answers": [
+              {
+                "value": "No Issues",
+                "answer": {
+                  "value": "No Issues",
+                  "connotation": 0,
+                  "answerGroups": ["A"]
+                }
+              }
+            ],
+            "question": {
+              "id": "640",
+              "buyerTranslation": "Passenger Front Tire & Rim Issue",
+              "section": "Tires & Rims"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "IuFGYl",
+    "type": "third_party",
+    "grade": {
+      "value": 2.9,
+      "description": "Dirty"
+    },
+    "metaData": {
+      "manex2021": true
+    },
+    "offsiteAnnouncements": [],
+    "offsiteRemarks": [],
+    "titleInformation": {
+      "status": "NOT SPECIFIED",
+      "brandings": []
+    },
+    "vehicleDetails": {
+      "vin": "KMHGN4JE1FU060125",
+      "driveTrain": "FRONT_WHEEL_DRIVE",
+      "engine": "4_CYLINDER",
+      "exteriorColor": "Sonic Silver",
+      "interiorColor": "Black",
+      "make": "Hyundai",
+      "model": "Veloster",
+      "odometer": 49851,
+      "sellerName": "HERTZ REMARKETING",
+      "transmission": "AUTOMATIC",
+      "trim": "2.0L",
+      "year": 2019
+    },
+    "images": [
+      "https://res.cloudinary.com/dtram9qiy/image/upload/v1660501425/my-upload/soysipdedwtow090cixe.png",
+      "https://res.cloudinary.com/dtram9qiy/image/upload/v1660501929/my-upload/s2tpw0gjilnvzmmqhdrv.png",
+      "https://res.cloudinary.com/dtram9qiy/image/upload/v1660501967/my-upload/hogca7grsimqzksvbcwv.png",
+      "https://res.cloudinary.com/dtram9qiy/image/upload/v1660501997/my-upload/kfyibngtu49gssqtki9n.png",
+      "https://res.cloudinary.com/dtram9qiy/image/upload/v1660502065/my-upload/hxq5cytysrzkcnsuvfpx.png",
+      "https://res.cloudinary.com/dtram9qiy/image/upload/v1660502098/my-upload/sbgyox2ewwtgayzmbvzp.png"
+    ],
+    "inspectionSections": [
+      {
+        "name": "Drivability, Keys, & History",
+        "responses": [
+          {
+            "guid": "9c5ca492-7180-4f65-894d-4030a00a5e99",
+            "answers": [
+              {
+                "value": "1",
+                "answer": {
+                  "value": "1",
+                  "connotation": 0
+                }
+              }
+            ],
+            "question": {
+              "id": "10",
+              "buyerTranslation": "Smart Keys",
+              "section": "Drivability, Keys, & History"
+            }
+          },
+          {
+            "guid": "29731ce6-d35b-466d-9323-88a5d54c8edf",
+            "answers": [
+              {
+                "value": "0",
+                "answer": {
+                  "value": "0",
+                  "connotation": 0
+                }
+              }
+            ],
+            "question": {
+              "id": "15",
+              "buyerTranslation": "Other Keys",
+              "section": "Drivability, Keys, & History"
+            }
+          },
+          {
+            "guid": "ab0010e0-7817-434d-995f-17433bb77657",
+            "answers": [
+              {
+                "value": "None",
+                "answer": {
+                  "value": "None",
+                  "connotation": 0,
+                  "answerGroups": ["A"],
+                  "requiredQuestions": ["0cc67cdf-7a1b-4dc5-bc94-185782db8316"]
+                }
+              }
+            ],
+            "question": {
+              "id": "20",
+              "buyerTranslation": "Smoke/Bio/Environmental/History",
+              "section": "Drivability, Keys, & History"
+            }
+          },
+          {
+            "guid": "0cc67cdf-7a1b-4dc5-bc94-185782db8316",
+            "answers": [
+              {
+                "value": "Yes - Starts",
+                "answer": {
+                  "value": "Yes - Starts",
+                  "connotation": 0,
+                  "answerGroups": ["A"],
+                  "requiredQuestions": ["64d36bc5-6263-447f-83de-b548ce0db8d9"]
+                }
+              }
+            ],
+            "question": {
+              "id": "30",
+              "buyerTranslation": "Vehicle Starts",
+              "section": "Drivability, Keys, & History"
+            }
+          },
+          {
+            "guid": "64d36bc5-6263-447f-83de-b548ce0db8d9",
+            "answers": [
+              {
+                "value": "Yes - Drives",
+                "answer": {
+                  "value": "Yes - Drives",
+                  "connotation": 0,
+                  "answerGroups": ["A"],
+                  "requiredQuestions": ["d9698860-40c1-46b2-9ff3-fd087ab9fc21"]
+                }
+              }
+            ],
+            "question": {
+              "id": "40",
+              "buyerTranslation": "Vehicle Drives",
+              "section": "Drivability, Keys, & History"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Exterior",
+        "responses": [
+          {
+            "guid": "9409ce2f-6a67-40b0-834c-c5a31533b59f",
+            "answers": [
+              {
+                "value": "No DAMAGE",
+                "answer": {
+                  "value": "No Damage",
+                  "connotation": 0,
+                  "answerGroups": ["A"]
+                }
+              }
+            ],
+            "question": {
+              "id": "250",
+              "buyerTranslation": "Front Exterior",
+              "section": "Exterior"
+            }
+          },
+          {
+            "guid": "c10dae02-630b-4589-b2a3-d2eacd81b15d",
+            "answers": [
+              {
+                "value": "No Damage",
+                "answer": {
+                  "value": "No Damage",
+                  "connotation": 0,
+                  "answerGroups": ["A"]
+                }
+              }
+            ],
+            "question": {
+              "id": "320",
+              "buyerTranslation": "Driver Exterior",
+              "section": "Exterior"
+            }
+          },
+          {
+            "guid": "38462f5d-d3be-45c3-bd8b-a92ea6a423ae",
+            "answers": [
+              {
+                "value": "No Damage",
+                "answer": {
+                  "value": "No Damage",
+                  "connotation": 0,
+                  "answerGroups": ["A"]
+                }
+              }
+            ],
+            "question": {
+              "id": "420",
+              "buyerTranslation": "Roof - Exterior",
+              "section": "Exterior"
+            }
+          },
+          {
+            "guid": "005a176d-77db-4a19-b774-56615307dcc9",
+            "answers": [
+              {
+                "value": "No Damage",
+                "answer": {
+                  "value": "No Damage",
+                  "connotation": 0,
+                  "answerGroups": ["A"]
+                }
+              }
+            ],
+            "question": {
+              "id": "480",
+              "buyerTranslation": "Rear Exterior",
+              "section": "Exterior"
+            }
+          },
+          {
+            "guid": "600c80a9-b9d2-452d-9416-6d5de861d45b",
+            "answers": [
+              {
+                "value": "No Damage",
+                "answer": {
+                  "value": "No Damage",
+                  "connotation": 0,
+                  "answerGroups": ["A"]
+                }
+              }
+            ],
+            "question": {
+              "id": "550",
+              "buyerTranslation": "Passenger Exterior",
+              "section": "Exterior"
+            }
+          },
+          {
+            "guid": "b2d9fb6a-c4b6-4650-9c2b-375b0309d0dd",
+            "answers": [
+              {
+                "value": "Wrap",
+                "notes": "Clear wrap on front bumper hood and fenders",
+                "answer": {
+                  "value": "Wrap",
+                  "showNotes": true,
+                  "notesLabel": "Vehicle has wrap over paint panels",
+                  "connotation": -1,
+                  "answerGroups": ["B"],
+                  "metaData": {
+                    "referenceId": "6501111",
+                    "artCode": {
+                      "itemCode": 2,
+                      "itemSubCode": 0,
+                      "damageCode": "DI",
+                      "severityCode": "RM"
+                    }
+                  }
+                }
+              }
+            ],
+            "question": {
+              "id": "660",
+              "buyerTranslation": "Other Body & Paint Issues",
+              "section": "Exterior"
+            }
+          },
+          {
+            "guid": "55776e24-61fb-4839-8e61-dfad901943ea",
+            "answers": [
+              {
+                "value": "N/A",
+                "answer": {
+                  "value": "N/A",
+                  "connotation": 0,
+                  "answerGroups": ["A"]
+                }
+              }
+            ],
+            "question": {
+              "id": "670",
+              "buyerTranslation": "Announcements",
+              "section": "Exterior"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Interior",
+        "responses": [
+          {
+            "guid": "0b8c56ca-8399-4733-a76f-b1a290ebf57e",
+            "answers": [
+              {
+                "value": "No Issues",
+                "answer": {
+                  "value": "No Issues",
+                  "connotation": 0,
+                  "answerGroups": ["A"]
+                }
+              }
+            ],
+            "question": {
+              "id": "80",
+              "buyerTranslation": "Airbags",
+              "section": "Interior"
+            }
+          },
+          {
+            "guid": "254becea-950c-4ca5-8031-d2f4e6bd9fa2",
+            "answers": [
+              {
+                "value": "Fully Functional",
+                "answer": {
+                  "value": "Fully Functional",
+                  "connotation": 0,
+                  "answerGroups": ["A"]
+                }
+              }
+            ],
+            "question": {
+              "id": "90",
+              "buyerTranslation": "Infotainment/Radio",
+              "section": "Interior"
+            }
+          },
+          {
+            "guid": "fea32825-dc23-45b7-99dc-32c4244652a5",
+            "answers": [
+              {
+                "value": "Fully Functional",
+                "answer": {
+                  "value": "Fully Functional",
+                  "connotation": 0,
+                  "answerGroups": ["A"]
+                }
+              }
+            ],
+            "question": {
+              "id": "100",
+              "buyerTranslation": "Climate Control",
+              "section": "Interior"
+            }
+          },
+          {
+            "guid": "50a583bc-51d4-4ec2-ad9f-77c5e53601e5",
+            "answers": [
+              {
+                "value": "Fully Functional",
+                "answer": {
+                  "value": "Fully Functional",
+                  "connotation": 0,
+                  "answerGroups": ["A"]
+                }
+              }
+            ],
+            "question": {
+              "id": "120",
+              "buyerTranslation": "Electrical Accessory",
+              "section": "Interior"
+            }
+          },
+          {
+            "guid": "ff0cf0ab-5b04-45b4-8a14-8bac5d17d375",
+            "answers": [],
+            "question": {
+              "id": "139",
+              "buyerTranslation": "Interior Cosmetic Damage",
+              "section": "Interior"
+            }
+          },
+          {
+            "guid": "b19e4d79-a264-498f-89d1-0f355469277d",
+            "answers": [
+              {
+                "value": "Torn",
+                "notes": "Driver door handle leather part tearing",
+                "answer": {
+                  "connotation": -1,
+                  "showNotes": true,
+                  "value": "Torn",
+                  "metaData": {
+                    "referenceId": "780908",
+                    "artCode": {
+                      "itemCode": 410,
+                      "itemSubCode": 1,
+                      "damageCode": "TN",
+                      "severityCode": "G4"
+                    },
+                    "takePhoto": {
+                      "type": "damage",
+                      "title": "Dash Panel Torn",
+                      "description": "Dash Panel Torn"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mechanical",
+        "responses": [
+          {
+            "guid": "917db670-097f-4841-bd93-127729726df6",
+            "answers": [
+              {
+                "value": "No Issues",
+                "answer": { "value": "No Issues", "connotation": 0 }
+              }
+            ],
+            "question": {
+              "id": "170",
+              "buyerTranslation": "Vehicle Smoke",
+              "section": "Mechanical"
+            }
+          },
+          {
+            "guid": "03baa3a8-1679-4c4e-89a1-6ffc6a74e59d",
+            "answers": [
+              {
+                "value": "No Issues",
+                "answer": {
+                  "value": "No Issues",
+                  "connotation": 0,
+                  "answerGroups": ["A"]
+                }
+              }
+            ],
+            "question": {
+              "id": "180",
+              "buyerTranslation": "Emissions/Catalytic/Exhaust",
+              "section": "Mechanical"
+            }
+          },
+          {
+            "guid": "4dfa088e-1b81-42a0-81e6-8feffd08e4c4",
+            "answers": [
+              {
+                "value": "No Issues",
+                "answer": { "value": "No Issues", "connotation": 0 }
+              }
+            ],
+            "question": {
+              "buyerTranslation": "Leaks From Engine or Undercarriage Area (Class 2 or 3)",
+              "id": "210",
+              "section": "Mechanical"
+            }
+          },
+          {
+            "guid": "9215cd5d-bdfe-4078-8d2b-fb3a3c33ef37",
+            "answers": [
+              {
+                "value": "No Issues",
+                "answer": { "value": "No Issues", "connotation": 0 }
+              }
+            ],
+            "question": {
+              "id": "220",
+              "buyerTranslation": "Engine Noise",
+              "section": "Mechanical"
+            }
+          },
+          {
+            "guid": "c60b2d1f-47fe-4a16-9860-619c0717ed15",
+            "answers": [
+              {
+                "value": "No Oil Sludge",
+                "answer": { "value": "No Oil Sludge", "connotation": 0 }
+              }
+            ],
+            "question": {
+              "id": "230",
+              "buyerTranslation": "Engine Oil Sludge",
+              "section": "Mechanical"
+            }
+          },
+          {
+            "guid": "eb9abc8b-c296-4a70-aa8f-cfb343225ed5",
+            "answers": [
+              {
+                "value": "N/A",
+                "answer": {
+                  "value": "N/A",
+                  "connotation": 0,
+                  "answerGroups": ["A"]
+                }
+              }
+            ],
+            "question": {
+              "id": "240",
+              "buyerTranslation": "Other Mechanical Comments",
+              "section": "Mechanical"
+            }
+          },
+          {
+            "guid": "d069982b-b577-4d39-a434-f0ab54d9caf7",
+            "answers": [
+              {
+                "value": "None",
+                "answer": {
+                  "value": "None",
+                  "connotation": 0,
+                  "answerGroups": ["A"]
+                }
+              }
+            ],
+            "question": {
+              "id": "245",
+              "buyerTranslation": "Suspension Modification",
+              "section": "Mechanical"
+            }
+          }
+        ]
+      },
+      {
+        "name": "OBD II & Warning Lights",
+        "responses": [
+          {
+            "guid": "d9698860-40c1-46b2-9ff3-fd087ab9fc21",
+            "answers": [
+              {
+                "notes": "No codes at the moment",
+                "value": "Yellow/Incomplete Monitors",
+                "answer": {
+                  "connotation": -1,
+                  "notesLabel": "*Required* Enter codes, comma separated \"PXXXX, PXXXX\"",
+                  "showNotes": true,
+                  "value": "Yellow/Incomplete Monitors"
+                },
+                "metaData": {
+                  "referenceId": "6083",
+                  "artCode": {
+                    "itemCode": 520,
+                    "itemSubCode": 92,
+                    "damageCode": "LS",
+                    "severityCode": "RE"
+                  },
+                  "takePhoto": {
+                    "type": "damage",
+                    "title": "Yellow OBD2 Codes",
+                    "description": "Yellow OBD2 Codes"
+                  }
+                }
+              }
+            ],
+            "question": {
+              "id": "60",
+              "buyerTranslation": "OBD II Lights & Codes",
+              "section": "OBD II & Warning Lights"
+            }
+          },
+          {
+            "guid": "6f3e2bd5-5bb7-4222-a8bc-4cd3fdec2e8e",
+            "answers": [
+              {
+                "value": "No Issues",
+                "answer": {
+                  "value": "No Issues",
+                  "connotation": 0,
+                  "answerGroups": ["A"]
+                }
+              }
+            ],
+            "question": {
+              "id": "70",
+              "buyerTranslation": "Warning Lights & Gauge Cluster",
+              "section": "OBD II & Warning Lights"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Tires & Rims",
+        "responses": [
+          {
+            "guid": "3bb285d8-b418-4025-bd30-930f2bb18697",
+            "answers": [
+              {
+                "value": "6/32\" or Above",
+                "answer": { "value": "6/32\" or Above", "connotation": 0 }
+              }
+            ],
+            "question": {
+              "id": "309",
+              "buyerTranslation": "Driver Front Tire Depth",
+              "section": "Tires & Rims"
+            }
+          },
+          {
+            "guid": "d0aeaa15-8742-44bd-8768-3af31ebdc2f9",
+            "answers": [
+              {
+                "value": "Rim Curb Rash",
+                "answer": {
+                  "answerGroups": ["C"],
+                  "connotation": -1,
+                  "value": "Rim Curb Rash",
+                  "takePhoto": {
+                    "type": "damage",
+                    "title": "LF Wheel Rim Curb Rash",
+                    "description": "LF Wheel Rim Curb Rash"
+                  },
+                  "metaData": {
+                    "referenceId": 310522,
+                    "artCode": {
+                      "itemCode": 120,
+                      "itemSubCode": 0,
+                      "damageCode": "CE",
+                      "severityCode": "G4"
+                    }
+                  }
+                }
+              }
+            ],
+            "question": {
+              "id": "310",
+              "buyerTranslation": "Driver Front Tire & Rim Issue",
+              "section": "Tires & Rims"
+            }
+          },
+          {
+            "guid": "9095fe36-7228-4dc3-9246-e6f8813ad350",
+            "answers": [
+              {
+                "value": "6/32\" or Above",
+                "answer": { "value": "6/32\" or Above", "connotation": 0 }
+              }
+            ],
+            "question": {
+              "id": "409",
+              "buyerTranslation": "Driver Rear Tire Depth",
+              "section": "Tires & Rims"
+            }
+          },
+          {
+            "guid": "7dc968f7-055f-468c-ba23-88da72942d36",
+            "answers": [
+              {
+                "value": "Rim Curb Rash",
+                "answer": {
+                  "value": "Rim Curb Rash",
+                  "answerGroups": ["C"],
+                  "connotation": -1,
+                  "metaData": {
+                    "referenceId": 410704,
+                    "artCode": {
+                      "itemCode": 190,
+                      "itemSubCode": 0,
+                      "damageCode": "CE",
+                      "severityCode": "G4"
+                    },
+                    "takePhoto": {
+                      "type": "damage",
+                      "title": "LR Wheel Rim Curb Rash",
+                      "description": "LR Wheel Rim Curb Rash"
+                    }
+                  }
+                }
+              }
+            ],
+            "question": {
+              "id": "410",
+              "buyerTranslation": "Driver Rear Tire & Rim Issue",
+              "section": "Tires & Rims"
+            }
+          },
+          {
+            "guid": "d7b97405-b66c-4bb6-ab9d-10fe4b663cd1",
+            "answers": [
+              {
+                "value": "6/32\" or Above",
+                "answer": { "value": "6/32\" or Above", "connotation": 0 }
+              }
+            ],
+            "question": {
+              "id": "539",
+              "buyerTranslation": "Passenger Rear Tire Depth",
+              "section": "Tires & Rims"
+            }
+          },
+          {
+            "guid": "5e567c7a-1579-4e54-a0cb-e9242b4999f4",
+            "answers": [
+              {
+                "value": "No Issues",
+                "answer": {
+                  "value": "No Issues",
+                  "connotation": 0,
+                  "answerGroups": ["A"]
+                }
+              }
+            ],
+            "question": {
+              "id": "540",
+              "buyerTranslation": "Passenger Rear Tire & Rim Issue",
+              "section": "Tires & Rims"
+            }
+          },
+          {
+            "guid": "9782eb61-37e2-4c5f-a6ae-62a6399a6d8d",
+            "answers": [
+              {
+                "value": "6/32\" or Above",
+                "answer": { "value": "6/32\" or Above", "connotation": 0 }
+              }
+            ],
+            "question": {
+              "id": "635",
+              "buyerTranslation": "Passenger Front Tire Depth",
+              "section": "Tires & Rims"
+            }
+          },
+          {
+            "guid": "d12e8cde-8a51-49aa-8660-8ae5cd808ec3",
+            "answers": [
+              {
+                "value": "No Issues",
+                "answer": {
+                  "value": "No Issues",
+                  "connotation": 0,
+                  "answerGroups": ["A"]
+                }
+              }
+            ],
+            "question": {
+              "id": "640",
+              "buyerTranslation": "Passenger Front Tire & Rim Issue",
+              "section": "Tires & Rims"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,3 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.checkbox:checked + .label .ball {
+  transform: translateX(16px);
+}
+
+@layer components {
+  .nav {
+    @apply w-full top-0 z-50 py-1 sticky border-b border-gray-2 dark:border-dark-2 bg-white dark:bg-dark-1
+  }
+  .navLink {
+    @apply font-semibold text-sm hover:text-dark-1 dark:hover:text-gray-1 transition-all transform duration-150 active:brightness-110;
+  }
+
+  /* Mobile Nav */
+  .menuItems {
+    @apply fixed right-0 top-5 w-screen min-w-full h-[450px] shadow-md dark:shadow-black-2 bg-gray-1 mt-3 flex flex-col items-center justify-evenly dark:bg-dark-1 dark:text-gray-300;
+  }
+  .dropdownIcon {
+    @apply w-7 h-7 hover:text-dark-1 dark:hover:text-gray-1 mx-3 transition-all transform duration-150 active:brightness-110;
+  }
+}
