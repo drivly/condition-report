@@ -17,6 +17,8 @@ const Banner = ({ bannerText, wrapperStyle, bodyStyle, image }: Props) => {
           <Image
             src="https://res.cloudinary.com/dtram9qiy/image/upload/v1660503590/my-upload/bmiduxmijdh4uokdv7tm.jpg"
             alt="poster of cars"
+            placeholder='blur'
+            blurDataURL="https://res.cloudinary.com/dtram9qiy/image/upload/v1660503590/my-upload/bmiduxmijdh4uokdv7tm.jpg"
             layout="fill"
             objectFit="cover"
             priority
