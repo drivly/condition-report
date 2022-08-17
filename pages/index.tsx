@@ -59,7 +59,7 @@ export default Home;
 // };
 
 export const getServerSideProps = async () => {
-  const response = await axios.get(`${baseUrl}api/vehicles`);
+  const response = await axios.get(`${baseUrl}/api/vehicles`);
 
   return {
     props: {
