@@ -75,7 +75,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   }
 
   return {
-    props: { vehicle },
+    props: { vehicle  } || {},
     revalidate: 60,
   };
 };
