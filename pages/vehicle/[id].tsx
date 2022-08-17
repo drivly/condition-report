@@ -48,12 +48,9 @@ export default VehiclePage;
 
 
 export const getServerSideProps = async ({params}: GetServerSidePropsContext) => {
-  console.log(params)
   const vehicle = await axios
     .get(`${baseUrl}/api/vehicles/${params?.id}`)
     .then((res) => res.data);
-
- console.log(vehicle)
 
   return {
     props: { vehicle  }

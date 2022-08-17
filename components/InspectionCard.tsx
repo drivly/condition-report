@@ -18,7 +18,6 @@ const InspectionCard = ({ vehicle }: Props) => {
     <section className="grid grid-cols-1 sm:grid-cols-2 gap-8">
       {inspectionSections[sectionValue.index]?.responses?.map((res) => {
         let answers = res?.answers[0];
-        console.log("answers", answers);
         return (
           <div
             key={res.guid}

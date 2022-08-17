@@ -7,8 +7,6 @@ export default function InfoModal() {
   const [isOpen, setOpen] = useRecoilState(infoModalState);
   const [moreInfo, setMoreInfo] = useRecoilState(moreInfoState);
 
-  console.log("moreInfo", moreInfo);
-
   return (
     <Transition appear show={isOpen} as={Fragment}>
       <Dialog as="div" className="relative z-10" onClose={setOpen}>
