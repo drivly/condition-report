@@ -1,5 +1,3 @@
-import { ColorSwatchIcon } from "@heroicons/react/outline";
-import React from "react";
 import { Vehicle } from "typings";
 import formatVehicleDetails from "utils/formatVehicleDetails";
 

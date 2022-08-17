@@ -1,4 +1,4 @@
-import React, { ReactNode, SVGProps, useEffect, useState } from "react";
+import { ReactNode, SVGProps, useEffect, useState } from "react";
 import formatGrade from "utils/formatGrade";
 
 interface Props {
@@ -30,7 +30,9 @@ const SectionTitle = ({ heading, title, Icon, grade }: Props) => {
     <header className="flex flex-col sm:flex sm:flex-row sm:items-center  sm:space-x-10 w-fit">
       <div className="flex flex-1 items-center tracking-widest space-x-4 md:space-x-8">
         <div className="flex-1">
-          <h1 className="uppercase text-gray-6 font-medium text-sm">{heading}</h1>
+          <h1 className="uppercase text-gray-6 font-medium text-sm">
+            {heading}
+          </h1>
           <h3 className="dark:text-gray-1 text-dark-1 text-3xl md:text-4xl font-bold leading-normal md:leading-normal whitespace-nowrap">
             {title}
           </h3>

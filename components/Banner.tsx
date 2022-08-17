@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 
 interface Props {
   image?: boolean;
@@ -32,9 +32,7 @@ const Banner = ({ bannerText, wrapperStyle, bodyStyle, image }: Props) => {
         </>
       )}
       <div className="h-96 bg-gradient-to-l from-transparent to-black/70 absolute w-full bottom-0 right-0" />
-      <h1 className={`font-bold text-4xl ${bodyStyle}`}>
-        {bannerText}
-      </h1>
+      <h1 className={`font-bold text-4xl ${bodyStyle}`}>{bannerText}</h1>
       <div className="absolute w-48 h-48 sm:w-32 sm:h-32 rounded-full bg-white/20 -top-9 -left-16 -z-5" />
       <div className="absolute w-72 h-72 sm:w-56 sm:h-56 rounded-full bg-white/20 -bottom-24 -right-14 -z-5" />
     </div>

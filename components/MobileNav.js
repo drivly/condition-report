@@ -1,7 +1,7 @@
 import { Menu, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
-import { Fragment } from "react";
 import { menuItems } from "lib/menuItems";
+import { Fragment } from "react";
 import MyLink from "./MyLink";
 
 export default function MobileNav() {

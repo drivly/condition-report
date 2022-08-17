@@ -1,16 +1,20 @@
 import AppProviders from "./AppProviders";
-import Footer from "./Footer";
-import Navbar from "./Navbar";
-import MobileNav from "./MobileNav"
-import MyLink from "./MyLink";
-import Banner from "./Banner"
 import AutoCard from "./AutoCard";
-import SectionTitle from "./SectionTitle";
+import Banner from "./Banner";
 import DarkModeToggle from "./DarkModeToggle";
-import VehicleDetails from "./VehicleDetails";
-import ManexIcon from "./ManexIcon";
-import OffsiteNotes from "./OffsiteNotes";
+import Footer from "./Footer";
 import ImageGallery from "./ImageGallery";
+import InfoModal from "./InfoModal";
+import InspectionCard from "./InspectionCard";
+import ManexIcon from "./ManexIcon";
+import MobileNav from "./MobileNav";
+import MyLink from "./MyLink";
+import Navbar from "./Navbar";
+import OffsiteNotes from "./OffsiteNotes";
+import SectionHeader from "./SectionHeader";
+import SectionTitle from "./SectionTitle";
 import TitleInfo from "./TitleInfo";
+import VehicleDetails from "./VehicleDetails";
 
-export { AppProviders, Footer, Navbar, MobileNav, MyLink, Banner, AutoCard, SectionTitle, DarkModeToggle, VehicleDetails, ManexIcon, OffsiteNotes, ImageGallery, TitleInfo }
+export { AppProviders, Footer, Navbar, MobileNav, MyLink, Banner, AutoCard, SectionTitle, DarkModeToggle, VehicleDetails, ManexIcon, OffsiteNotes, ImageGallery, TitleInfo, InfoModal, SectionHeader, InspectionCard };
+

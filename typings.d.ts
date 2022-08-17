@@ -5,7 +5,7 @@ export interface Vehicle {
   };
   id: string;
   images: string[];
-  inspectionSections: {}[];
+  inspectionSections: Section[];
   metaData: {
     manex2021: boolean;
   };
@@ -32,3 +32,28 @@ export interface Vehicle {
     year: number;
   };
 }
+
+export type Section = {
+  name: string;
+  responses: Response[];
+};
+
+export type Response = {
+  guid: string;
+  question: {
+    buyerTranslation: string;
+    id: string;
+    section: string;
+  };
+  answers: IAnswers[];
+};
+
+export type IAnswers = {
+  answer: {
+    connotation: number;
+    value: string;
+    noteLabel?: string;
+  };
+  notes?: string;
+  value: string;
+};

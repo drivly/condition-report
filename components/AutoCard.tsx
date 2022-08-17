@@ -29,7 +29,9 @@ const AutoCard = ({ vehicle }: Props) => {
               </p>
             </div>
             <div className="flex items-center">
-              <p className="font-bold text-base sm:text-lg">{vehicle.vehicleDetails.year}</p>
+              <p className="font-bold text-base sm:text-lg">
+                {vehicle.vehicleDetails.year}
+              </p>
             </div>
           </div>
         </div>

@@ -54,9 +54,8 @@ const MenuItems = ({
           key={i}
           onClick={() => {
             setActive(item.href);
-
           }}
-          className={`navLink ${
+          className={`navLink mx-3 ${
             active === item.href
               ? "text-dark-1 dark:text-gray-1"
               : "text-gray-6"

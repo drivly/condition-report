@@ -14,7 +14,7 @@
     @apply w-full top-0 z-50 py-1 sticky border-b border-gray-2 dark:border-dark-2 bg-white dark:bg-dark-1
   }
   .navLink {
-    @apply font-semibold text-sm hover:text-dark-1 dark:hover:text-gray-1 mx-3 transition-all transform duration-150 active:brightness-110;
+    @apply font-semibold text-sm hover:text-dark-1 dark:hover:text-gray-1 transition-all transform duration-150 active:brightness-110;
   }
 
   /* Mobile Nav */
