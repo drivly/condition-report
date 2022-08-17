@@ -4,7 +4,7 @@ import {
   ImageGallery, InspectionCard, ManexIcon, OffsiteNotes,
   SectionHeader, SectionTitle, TitleInfo, VehicleDetails
 } from "components";
-import { GetStaticProps } from "next";
+import { GetServerSideProps, GetServerSidePropsContext, GetStaticProps } from "next";
 import { Vehicle } from "typings";
 import baseUrl from "utils/baseUrl";
 
@@ -46,36 +46,16 @@ const VehiclePage = ({ vehicle }: Props) => {
 
 export default VehiclePage;
 
-export const getStaticPaths = async () => {
-  const vehicles = await axios
-    .get(`${baseUrl}/api/vehicles`)
-    .then((res) => res.data);
 
-  const paths = vehicles.map((vehicle: Vehicle) => ({
-    params: {
-      id: vehicle.id,
-    },
-  }));
-
-  return {
-    paths,
-    fallback: false,
-  };
-};
-
-export const getStaticProps: GetStaticProps = async ({ params }) => {
+export const getServerSideProps = async ({params}: GetServerSidePropsContext) => {
+  console.log(params)
   const vehicle = await axios
     .get(`${baseUrl}/api/vehicles/${params?.id}`)
     .then((res) => res.data);
 
-  if (!vehicle) {
-    return {
-      notFound: true,
-    };
-  }
+ console.log(vehicle)
 
   return {
-    props: { vehicle  } || {},
-    revalidate: 60,
+    props: { vehicle  }
   };
 };
