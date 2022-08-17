@@ -6,7 +6,7 @@ const nextConfig = {
   env: {
     BASE_URL:
       process.env.NODE_ENV === "production"
-        ? "https://condition-report.dev.driv.ly"
+        ? "https://condition-report.vercel.app"
         : "http://localhost:3000",
   },
   images: {
