@@ -7,7 +7,7 @@ interface Props {
 
 const ManexIcon = ({ vehicle: { metaData } }: Props) => {
   return (
-    <div className="absolute top-8 right-0">
+    <div className="absolute top-3 right-0">
       {metaData.manex2021 === true ? (
         <div className="flex items-end text-gray-6">
           <p className="text-xs leading-[0.9] italic mr-1">Manex 2021</p>

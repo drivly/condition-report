@@ -20,7 +20,7 @@ const AppProviders = ({ children }: Props) => {
         </Head>
         <div className="bg-gray-1 text-dark-1 dark:bg-dark-1 dark:text-gray-1 min-h-screen font-poppins">
           <Navbar />
-          <div className="max-w-7xl mx-auto px-5 sm:px-10">{children}</div>
+          <div className="max-w-7xl mx-auto px-5 md:px-10">{children}</div>
           <Footer />
           <InfoModal />
         </div>

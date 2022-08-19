@@ -1,15 +1,14 @@
-import axios from "axios";
 import { AutoCard, Banner, SectionTitle } from "components";
-import { GetStaticProps } from "next";
+// import { getVehicles } from "lib/getVehicles";
 import { Vehicle } from "typings";
-import baseUrl from "utils/baseUrl";
+import vehicles from "lib/vehicles.json";
 
 interface Props {
   vehicles: Vehicle[];
 }
 
 const Home = ({ vehicles }: Props) => {
-  console.log("vehicles", vehicles);
+
   return (
     <div className="flex flex-col justify-center">
       {/* Banner Hero Image */}
@@ -47,23 +46,13 @@ const Home = ({ vehicles }: Props) => {
 
 export default Home;
 
-// export const getStaticProps: GetStaticProps = async () => {
-//   const response = await axios.get(`${baseUrl}/api/vehicles`);
-
-//   return {
-//     props: {
-//       vehicles: response.data,
-//     },
-//     revalidate: 60,
-//   };
-// };
-
-export const getServerSideProps = async () => {
-  const response = await axios.get(`${baseUrl}/api/vehicles`);
-
+export const getStaticProps = async () => {
+  // const vehicles = await getVehicles()
+  // or just return the json file
   return {
     props: {
-      vehicles: response.data,
+      vehicles,
     },
+    revalidate: 60,
   };
 };

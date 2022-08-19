@@ -9,8 +9,8 @@
     "metaData": {
       "manex2021": true
     },
-    "offsiteAnnouncements": [],
-    "offsiteRemarks": [],
+    "offsiteAnnouncements": ["Buy Me Today"],
+    "offsiteRemarks": ["remarkable", "I may be on to something"],
     "titleInformation": {
       "status": "PRESENT",
       "state": "CA",

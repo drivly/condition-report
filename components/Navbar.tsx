@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <nav className="nav">
-      <header className="flex items-center justify-between max-w-7xl mx-auto px-5 sm:px-10">
+      <header className="flex items-center justify-between max-w-7xl mx-auto px-5 md:px-10">
         <div onClick={() => setActive("/")}>
           <Link href="/">
             <div className="h-16 w-16 relative cursor-pointer">
@@ -25,10 +25,10 @@ const Navbar = () => {
 
         {/* Left Side */}
         <div className="flex items-center justify-center">
-          <div className="hidden sm:flex">
+          <div className="hidden md:flex">
             <MenuItems active={active} setActive={setActive} />
           </div>
-          <div className="flex sm:hidden items-center">
+          <div className="flex md:hidden items-center">
             <MobileNav />
           </div>
           <DarkModeToggle />
