@@ -35,7 +35,7 @@ const SectionHeader = ({ vehicle }: Props) => {
               <span
                 className={`navLink hover:bg-green-accent hover:border-none px-4 py-2 rounded-full hover:text-gray-1 ${
                   sectionValue.name === section.name
-                    ? "text-dark-1 dark:text-gray-1 border-gray-6 border bg-gray-100"
+                    ? "text-dark-1 dark:text-gray-1 border-gray-6 border bg-gray-100 dark:bg-dark-3"
                     : "text-gray-6"
                 }`}>
                 {truncate(section?.name, 12)}
