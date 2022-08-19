@@ -1,14 +1,13 @@
 import { AutoCard, Banner, SectionTitle } from "components";
 // import { getVehicles } from "lib/getVehicles";
-import { Vehicle } from "typings";
 import vehicles from "lib/vehicles.json";
+import { Vehicle } from "typings";
 
 interface Props {
   vehicles: Vehicle[];
 }
 
 const Home = ({ vehicles }: Props) => {
-
   return (
     <div className="flex flex-col justify-center">
       {/* Banner Hero Image */}
@@ -48,7 +47,7 @@ export default Home;
 
 export const getStaticProps = async () => {
   // const vehicles = await getVehicles()
-  // or just return the json file
+  // or I just returned the json file
   return {
     props: {
       vehicles,

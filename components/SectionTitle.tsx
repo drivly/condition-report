@@ -1,5 +1,4 @@
-import { ReactNode, SVGProps, useEffect, useState } from "react";
-import formatGrade from "utils/formatGrade";
+import { ReactNode } from "react";
 
 interface Props {
   heading: string;

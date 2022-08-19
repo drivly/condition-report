@@ -1,7 +1,8 @@
 import { useSectionState } from "atoms/sectionAtom";
-import { truncate } from "lib/truncate";
+import { DamageCount } from "components";
 import { useRef } from "react";
 import { Vehicle } from "typings";
+import getDamageCount from "utils/getDamageCount";
 
 interface Props {
   vehicle: Vehicle;
@@ -17,6 +18,9 @@ const SectionHeader = ({ vehicle }: Props) => {
     setSectionValue({ name, index: i });
   };
 
+  // get total Damage Count and SEction
+  const damages = getDamageCount(inspectionSections, sectionValue.index);
+
   return (
     <section ref={sectionRef}>
       <h3 className="uppercase text-gray-6 tracking-widest font-medium text-sm">
@@ -25,21 +29,24 @@ const SectionHeader = ({ vehicle }: Props) => {
       <h3 className="dark:text-gray-1 text-dark-1 text-3xl md:text-4xl font-bold leading-normal md:leading-normal whitespace-nowrap pb-4 border-b-4 border-gray-6/20">
         {vehicleDetails.model} Report
       </h3>
-      <div className="py-4 mb-5 border-b-4 border-gray-6/20">
-        <ul className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3">
+      <div className="py-4 mb-5 border-b-4 border-gray-6/20 flex justify-between">
+        <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-x-10">
           {inspectionSections.map((section, i) => (
             <li
               key={i}
-              className="cursor-pointer my-3 w-fit whitespace-nowrap"
+              className="cursor-pointer my-2 relative"
               onClick={() => handleClick(section.name, i)}>
-              <span
-                className={`navLink hover:bg-green-accent hover:border-none px-4 py-2 rounded-full hover:text-gray-1 ${
+              <p
+                className={`inspectionLinks truncate ${
                   sectionValue.name === section.name
-                    ? "text-dark-1 dark:text-gray-1 border-gray-6 border bg-gray-100 dark:bg-dark-3"
+                    ? "text-dark-1 dark:text-gray-1 dark:hover:bg-green-accent border-gray-6/20 border-2 bg-gray-100 dark:bg-dark-3 shadow-md"
                     : "text-gray-6"
                 }`}>
-                {truncate(section?.name, 12)}
-              </span>
+                <span className="w-fit">{section?.name}</span>
+              </p>
+              {damages?.total && damages?.section === section?.name ? (
+                <DamageCount total={damages?.total} />
+              ) : null}
             </li>
           ))}
         </ul>

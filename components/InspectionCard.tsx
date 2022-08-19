@@ -1,4 +1,3 @@
-import { InformationCircleIcon } from "@heroicons/react/outline";
 import { ExclamationIcon } from "@heroicons/react/solid";
 import { infoModalState, moreInfoState } from "atoms/InfoModalAtom";
 import { useSectionState } from "atoms/sectionAtom";
@@ -25,9 +24,9 @@ const InspectionCard = ({ vehicle }: Props) => {
         return (
           <div
             key={res.guid}
-            className="flex flex-col justify-between space-y-2 py-2 text-sm">
+            className="flex flex-col justify-between space-y-2 gap-x-4 py-2 text-sm">
             {/* responses question */}
-            <p className="font-monty font-medium">
+            <p className="font-monty font-medium truncate">
               {res?.question?.buyerTranslation || "Not Listed"}
             </p>
             <div className="flex items-center">
@@ -48,7 +47,11 @@ const InspectionCard = ({ vehicle }: Props) => {
                     : "text-green-accent"
                 } font-semibold text-sm px-4 py-2`}>
                 {truncate(res?.answers[0]?.answer.value, 17) || "No Comments"}
-                {damages && <span><ExclamationIcon className="h-6 w-6 ml-2" /></span>}
+                {damages && (
+                  <span>
+                    <ExclamationIcon className="h-6 w-6 ml-2" />
+                  </span>
+                )}
               </p>
             </div>
           </div>

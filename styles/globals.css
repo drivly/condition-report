@@ -24,4 +24,8 @@
   .dropdownIcon {
     @apply w-7 h-7 hover:text-dark-1 dark:hover:text-gray-1 mx-3 transition-all transform duration-150 active:brightness-110;
   }
+
+  .inspectionLinks {
+    @apply font-semibold text-sm dark:hover:text-gray-1 transition-all transform duration-150 active:brightness-110 hover:bg-green-accent hover:border-green-accent px-4 py-2 rounded-full hover:text-gray-1 truncate;
+  }
 }
