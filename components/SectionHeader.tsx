@@ -26,30 +26,38 @@ const SectionHeader = ({ vehicle }: Props) => {
       <h3 className="uppercase text-gray-6 tracking-widest font-medium text-sm">
         Inspection Sections
       </h3>
-      <h3 className="dark:text-gray-1 text-dark-1 text-3xl font-bold leading-normal md:leading-normal whitespace-nowrap pb-4 border-b-4 border-gray-6/20">
-      Inspection
+      <h3 className="dark:text-gray-1 text-dark-1 text-3xl font-bold leading-normal md:leading-normal whitespace-nowrap pb-4">
+        Inspection
       </h3>
-      <div className="py-4 border-b-4 border-gray-6/20 flex justify-between">
-        <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-x-10">
+      <div className="py-4 border-b-4 border-t-4 border-gray-6/20 justify-between bg-gray-2/10">
+        {/* grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-x-10 */}
+        <ul className="flex flex-0 flex-wrap md:max-w-2xl">
           {inspectionSections.map((section, i) => {
-          return (
-            <li
-              key={i}
-              className="cursor-pointer my-2 relative"
-              onClick={() => handleClick(section.name, i)}>
-              <p
-                className={`inspectionLinks truncate ${
-                  sectionValue.name === section.name
-                    ? "text-dark-1 dark:text-gray-1 dark:hover:bg-green-accent border-gray-6/20 border-2 bg-gray-100 dark:bg-dark-3 shadow-md"
-                    : "text-gray-6"
-                }`}>
-                <span className="w-fit">{section?.name}</span>
-              </p>
-              {damages?.total && damages?.section === section?.name ? (
-                <DamageCount total={damages?.total} />
-              ) : null}
-            </li>
-          )})}
+            console.log(section.name);
+            return (
+              <li
+                key={i}
+                className="cursor-pointer my-1 relative"
+                onClick={() => handleClick(section.name, i)}>
+                <p
+                  className={`inspectionLinks ${
+                    sectionValue.name === section.name
+                      ? "activeInspectionLinks "
+                      : "text-gray-6"
+                  }`}>
+                  <span className="px-2">
+                    {section?.name.replace(
+                      "OBD II & Warning Lights",
+                      "Computer"
+                    )}
+                  </span>
+                  {damages?.total && damages?.section === section?.name ? (
+                    <DamageCount total={damages?.total} />
+                  ) : null}
+                </p>
+              </li>
+            );
+          })}
         </ul>
       </div>
     </section>

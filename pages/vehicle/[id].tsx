@@ -25,7 +25,7 @@ const VehiclePage = ({ vehicle }: Props) => {
 
       <main className="mx-auto max-w-7xl grid grid-cols-1 md:gap-10 md:grid-cols-12 pt-14 mb-8 pb-6">
         {/* Main Feed */}
-        <section className="col-span-1 md:col-span-7 mb-8 space-y-8">
+        <section className="col-span-1 md:col-span-7 space-y-8">
           {/* Left Side*/}
           <VehicleTitle vehicle={vehicle} />
           <ImageGallery vehicle={vehicle} />

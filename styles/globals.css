@@ -26,6 +26,10 @@
   }
 
   .inspectionLinks {
-    @apply font-semibold text-sm dark:hover:text-gray-1 transition-all transform duration-150 active:brightness-110 hover:bg-green-accent hover:border-green-accent px-4 py-2 rounded-full hover:text-gray-1 truncate;
+    @apply font-semibold text-xs dark:hover:text-gray-1 transition-all transform duration-150 active:brightness-110 hover:bg-green-accent hover:border-green-accent rounded-full hover:text-gray-1 flex items-center h-9;
+  }
+
+  .activeInspectionLinks {
+    @apply text-dark-1 dark:text-gray-1 dark:hover:bg-green-accent border-gray-6/20 border-2 bg-gray-100 dark:bg-dark-3 shadow-md
   }
 }
