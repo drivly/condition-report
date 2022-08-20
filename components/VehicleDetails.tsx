@@ -3,13 +3,17 @@ import formatVehicleDetails from "utils/formatVehicleDetails";
 
 interface Props {
   vehicle: Vehicle;
+  sectionStyle?: string
 }
 
-const VehicleDetails = ({ vehicle: { vehicleDetails } }: Props) => {
+const VehicleDetails = ({ vehicle: { vehicleDetails }, sectionStyle }: Props) => {
   return (
-    <div className="flex flex-col justify-center text-gray-6 capitalize mb-8">
-      <h3 className="flex md:hidden dark:text-gray-1 text-dark-1 text-3xl font-bold leading-normal md:leading-normal whitespace-nowrap mb-4">
-        Vehicle Details
+    <div className={`${sectionStyle} flex-col justify-center text-gray-6 capitalize`}>
+      <h3 className="uppercase text-gray-6 tracking-widest font-medium text-sm">
+        Vehicle Info
+      </h3>
+      <h3 className="flex dark:text-gray-1 text-dark-1 text-3xl font-bold leading-normal md:leading-normal whitespace-nowrap mb-4">
+        Details
       </h3>
       <div className="grid grid-cols-2 gap-y-4 text-sm font-monty font-medium">
         <div className="flex justify-between col-span-2 border-b border-gray-6/30 pb-4">

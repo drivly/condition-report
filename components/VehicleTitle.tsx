@@ -10,7 +10,7 @@ const VehicleTitle = ({ vehicle, sectionStyle }: Props) => {
   const { vehicleDetails } = vehicle;
 
   return (
-    <section className={`${sectionStyle} pb-8 border-b-4 border-gray-6/20 relative mb-8`}>
+    <section className={`${sectionStyle} pb-8 border-b-4 border-gray-6/20 relative`}>
       <SectionTitle
         heading="Condition Report"
         title={

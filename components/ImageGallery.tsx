@@ -11,7 +11,7 @@ const ImageGallery = ({ vehicle }: Props) => {
   const { vehicleDetails, images } = vehicle;
 
   return (
-    <section className="mb-8">
+    <section>
       {/* main image */}
       <div className="flex justify-center rounded-2xl bg-gray-1 sm:shadow-lg dark:bg-dark-3">
         <img
@@ -21,7 +21,7 @@ const ImageGallery = ({ vehicle }: Props) => {
         />
       </div>
       {/* thumb images to select main image */}
-      <div className="flex overflow-scroll space-x-4 scrollbar-hide mt-5">
+      <div className="flex overflow-scroll space-x-4 scrollbar-hide mt-4">
         {images.map((image, i) => (
           <div key={i} className="relative" onMouseEnter={() => setIndex(i)}>
             <Image

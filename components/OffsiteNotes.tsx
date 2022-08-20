@@ -13,7 +13,7 @@ const OffsiteNotes = ({ notes, remarks }: Props) => {
   return (
     <div className="max-w-full">
       <div className="w-full">
-        <Disclosure defaultOpen>
+        <Disclosure>
           {({ open }) => (
             <>
               <Disclosure.Button className="flex justify-between rounded-lg w-full bg-green-accent px-4 py-2 text-left text-sm font-medium text-gray-1 hover:brightness-110 focus:outline-none focus-visible:ring focus-visible:ring-blue-500 focus-visible:ring-opacity-75">

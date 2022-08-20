@@ -15,16 +15,18 @@ const InspectionCard = ({ vehicle }: Props) => {
   const [moreInfo, setMoreInfo] = useRecoilState(moreInfoState);
   const [isOpen, setOpen] = useRecoilState(infoModalState);
 
+  const sections = inspectionSections[sectionValue.index]?.responses;
+
   return (
-    <section className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 overflow-x-hidden">
-      {inspectionSections[sectionValue.index]?.responses?.map((res) => {
+    <section className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 overflow-x-hidden px-4">
+      {sections?.map((res) => {
         let answers = res?.answers[0];
         let damages = answers?.notes || answers?.answer?.noteLabel;
 
         return (
           <div
             key={res.guid}
-            className="flex flex-col justify-between space-y-2 gap-x-4 py-2 text-sm">
+            className="flex flex-col justify-between space-y-2 gap-x-4 text-sm">
             {/* responses question */}
             <p className="font-monty font-medium truncate">
               {res?.question?.buyerTranslation || "Not Listed"}

@@ -18,6 +18,7 @@ import VehicleDetails from "./VehicleDetails";
 import AutoGrade from "./AutoGrade";
 import DamageCount from "./DamageCount";
 import VehicleTitle from "./VehicleTitle";
+import Announcements from "./Announcements";
 
-export { AppProviders, Footer, Navbar, MobileNav, MyLink, Banner, AutoCard, SectionTitle, DarkModeToggle, VehicleDetails, ManexIcon, OffsiteNotes, ImageGallery, TitleInfo, InfoModal, SectionHeader, InspectionCard, AutoGrade, DamageCount, VehicleTitle };
+export { AppProviders, Footer, Navbar, MobileNav, MyLink, Banner, AutoCard, SectionTitle, DarkModeToggle, VehicleDetails, ManexIcon, OffsiteNotes, ImageGallery, TitleInfo, InfoModal, SectionHeader, InspectionCard, AutoGrade, DamageCount, VehicleTitle, Announcements };
 
