@@ -23,15 +23,16 @@ const SectionHeader = ({ vehicle }: Props) => {
 
   return (
     <section ref={sectionRef}>
-      <h3 className="uppercase text-gray-6 tracking-widest font-medium text-sm">
+      {/* <h3 className="uppercase text-gray-6 tracking-widest font-medium text-sm">
         Inspection Sections
-      </h3>
-      <h3 className="dark:text-gray-1 text-dark-1 text-3xl md:text-4xl font-bold leading-normal md:leading-normal whitespace-nowrap pb-4 border-b-4 border-gray-6/20">
-        {vehicleDetails.model} Report
+      </h3> */}
+      <h3 className="dark:text-gray-1 text-dark-1 text-3xl font-bold leading-normal md:leading-normal whitespace-nowrap pb-4 border-b-4 border-gray-6/20">
+      Inspection Report
       </h3>
       <div className="py-4 mb-5 border-b-4 border-gray-6/20 flex justify-between">
         <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-x-10">
-          {inspectionSections.map((section, i) => (
+          {inspectionSections.map((section, i) => {
+          return (
             <li
               key={i}
               className="cursor-pointer my-2 relative"
@@ -48,7 +49,7 @@ const SectionHeader = ({ vehicle }: Props) => {
                 <DamageCount total={damages?.total} />
               ) : null}
             </li>
-          ))}
+          )})}
         </ul>
       </div>
     </section>

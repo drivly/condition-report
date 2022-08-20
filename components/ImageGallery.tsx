@@ -11,14 +11,8 @@ const ImageGallery = ({ vehicle }: Props) => {
   const { vehicleDetails, images } = vehicle;
 
   return (
-    <section className="mb-10 border-b-4 border-gray-6/20 pb-10">
+    <section className="mb-8">
       {/* main image */}
-      <h1 className="uppercase text-gray-6 tracking-widest font-medium text-sm">
-        images section
-      </h1>
-      <h3 className="dark:text-gray-1 text-dark-1 text-3xl md:text-4xl font-bold leading-normal md:leading-normal whitespace-nowrap mb-4">
-        {vehicleDetails.model} Gallery
-      </h3>
       <div className="flex justify-center rounded-2xl bg-gray-1 sm:shadow-lg dark:bg-dark-3">
         <img
           src={images[index]}
@@ -46,3 +40,12 @@ const ImageGallery = ({ vehicle }: Props) => {
 };
 
 export default ImageGallery;
+
+/* 
+<h1 className="uppercase text-gray-6 tracking-widest font-medium text-sm">
+images section
+</h1>
+<h3 className="dark:text-gray-1 text-dark-1 text-3xl md:text-4xl font-bold leading-normal md:leading-normal whitespace-nowrap mb-4">
+{vehicleDetails.model} Gallery
+</h3> 
+*/

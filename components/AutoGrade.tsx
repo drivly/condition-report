@@ -21,13 +21,13 @@ const AutoGrade = ({ vehicle: { grade } }: Props) => {
   }, [grade]);
 
   return (
-    <div className="pl-4 flex flex-col items-center space-y-1  mt-1 flex-1">
+    <div className="flex flex-col items-center space-y-1 pt-4">
       <div className="relative flex flex-col items-center">
         <BadgeCheckIcon
-          className={`h-20 w-20 ${color ? color : "text-gray-6"}`}
+          className={`h-16 w-16 ${color ? color : "text-gray-6"}`}
         />
-        <p className="text-xs md:text-sm text-gray-6">{grade?.description}</p>
-        <div className="absolute top-0 -right-1  h-8 w-8 bg-dark-1 dark:bg-gray-1 rounded-full flex items-center justify-center ">
+        <p className="text-xs font-monty text-gray-6 leading-none -mt-0.5">{grade?.description}</p>
+        <div className="absolute top-4 right-[16px]  h-8 w-8 bg-dark-1 dark:bg-gray-1 rounded-full flex items-center justify-center ">
           <span className="text-gray-1 text-xs dark:text-dark-1 font-semibold">
             {grade?.value}
           </span>
