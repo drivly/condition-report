@@ -28,7 +28,7 @@ const AutoGrade = ({ vehicle: { grade } }: Props) => {
               : grade?.value > 3
               ? "bg-green-accent"
               : "bg-dark-1 dark:bg-gray-1"
-          } absolute z-50 top-4 right-[16px] h-8 w-8 rounded-full flex items-center justify-center`}>
+          } absolute top-4 right-[16px] h-8 w-8 rounded-full flex items-center justify-center`}>
           <span className="text-white text-xs font-semibold">
             {grade?.value}
           </span>
