@@ -33,7 +33,7 @@ const SectionHeader = ({ vehicle }: Props) => {
         {/* grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-x-10 */}
         <ul className="flex flex-0 flex-wrap md:max-w-2xl">
           {inspectionSections.map((section, i) => {
-            console.log(section.name);
+            
             return (
               <li
                 key={i}
