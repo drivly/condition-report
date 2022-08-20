@@ -31,7 +31,7 @@ const SectionHeader = ({ vehicle }: Props) => {
       </h3>
       <div className="py-4 border-b-4 border-t-4 border-gray-6/20 justify-between bg-gray-2/10">
         {/* grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-x-10 */}
-        <ul className="flex flex-0 flex-wrap md:max-w-2xl">
+        <ul className="flex flex-0 flex-wrap md:max-w-2xl gap-x-2">
           {inspectionSections.map((section, i) => {
             
             return (
