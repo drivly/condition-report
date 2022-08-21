@@ -9,7 +9,7 @@ interface Props {
 }
 
 const SectionHeader = ({ vehicle }: Props) => {
-  const { vehicleDetails, inspectionSections } = vehicle;
+  const { inspectionSections } = vehicle;
   const [sectionValue, setSectionValue] = useSectionState();
   const sectionRef = useRef<HTMLDivElement>(null);
 
@@ -18,8 +18,8 @@ const SectionHeader = ({ vehicle }: Props) => {
     setSectionValue({ name, index: i });
   };
 
-  // get total Damage Count and SEction
-  const damages = getDamageCount(inspectionSections, sectionValue.index);
+  // get total Damage Count and Sections
+  const filteredSections = getDamageCount(inspectionSections);
 
   return (
     <section ref={sectionRef}>
@@ -32,7 +32,7 @@ const SectionHeader = ({ vehicle }: Props) => {
       <div className="py-4 border-b-4 border-t-4 border-gray-6/20 justify-between bg-gray-2/10">
         {/* grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-x-10 */}
         <ul className="flex flex-0 flex-wrap md:max-w-2xl gap-x-2">
-          {inspectionSections.map((section, i) => {
+          {filteredSections.map((section, i) => {
             
             return (
               <li
@@ -51,9 +51,8 @@ const SectionHeader = ({ vehicle }: Props) => {
                       "Computer"
                     )}
                   </span>
-                  {damages?.total && damages?.section === section?.name ? (
-                    <DamageCount total={damages?.total} />
-                  ) : null}
+                  {section?.damageTotal > 0 &&
+                    <DamageCount total={section?.damageTotal} />}
                 </p>
               </li>
             );

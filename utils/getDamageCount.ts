@@ -1,31 +1,21 @@
 import { Section } from "typings";
 
-export default function getDamageCount(section: Section[], value: number) {
-
-  let damageItems = section[value]?.responses.filter(
-    (response) => response?.answers[0]?.answer?.connotation === -1
-  );
-
-  let totalDamages = damageItems?.length;
-
-  return damageItems
-    ? { total: totalDamages, section: section[value].name }
-    : null;
+export default function getDamageCount(section: Section[]) {
+  let resultArr = []
+  for (let item of section) {
+    let sectionName = item.name
+    let damageItems = getDamageItems(item.responses)
+    resultArr?.push({
+      name: sectionName,
+      damageTotal: damageItems?.length
+    })
+  }
+  return resultArr
 }
 
 
-// let damageSections: { section: string; damageItems: any; }[] = [];
-//   let damageItems = section.map((items) =>
-//     items?.responses.filter((response) => {
-//       if (response?.answers[0]?.answer?.connotation === -1) {
-//         damageSections.push({
-//           section: response?.question?.section,
-//           damageItems: response?.answers[0]?.answer,
-//         });
-//       }
-//     })
-//   );
-
-//   let totalDamages = damageItems?.length;
-
-//   console.log(damageSections);
+function getDamageItems(array: any) {
+  return array?.filter(
+    (response: { answers: { answer: { connotation: number; }; }[]; }) => response?.answers[0]?.answer?.connotation === -1
+  );
+}
