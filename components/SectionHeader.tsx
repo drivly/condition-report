@@ -24,23 +24,21 @@ const SectionHeader = ({ vehicle }: Props) => {
   return (
     <section ref={sectionRef}>
       <h3 className="uppercase text-gray-6 tracking-widest font-medium text-sm">
-        Inspection Sections
+        Filters
       </h3>
       <h3 className="dark:text-gray-1 text-dark-1 text-3xl font-bold leading-normal md:leading-normal whitespace-nowrap pb-4">
         Inspection
       </h3>
-      <div className="py-4 border-b-4 border-t-4 border-gray-6/20 justify-between bg-gray-2/10">
-        {/* grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-x-10 */}
-        <ul className="flex flex-0 flex-wrap md:max-w-2xl gap-x-2">
+      <div className="py-4 border-b-4 border-t-4 border-gray-6/20 justify-between dark:bg-gray-5/5 bg-gray-2/5">
+        <ul className="flex flex-0 flex-wrap max-w-2xl gap-x-2 mx-auto">
           {filteredSections.map((section, i) => {
-            
             return (
               <li
                 key={i}
                 className="cursor-pointer my-1 relative"
                 onClick={() => handleClick(section.name, i)}>
                 <p
-                  className={`inspectionLinks ${
+                  className={`inspectionLinks group ${
                     sectionValue.name === section.name
                       ? "activeInspectionLinks "
                       : "text-gray-6"
@@ -51,8 +49,9 @@ const SectionHeader = ({ vehicle }: Props) => {
                       "Computer"
                     )}
                   </span>
-                  {section?.damageTotal > 0 &&
-                    <DamageCount total={section?.damageTotal} />}
+                  {section?.damageTotal > 0 && (
+                    <DamageCount total={section?.damageTotal} />
+                  )}
                 </p>
               </li>
             );

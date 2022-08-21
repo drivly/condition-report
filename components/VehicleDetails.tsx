@@ -10,7 +10,7 @@ const VehicleDetails = ({ vehicle: { vehicleDetails }, sectionStyle }: Props) =>
   return (
     <div className={`${sectionStyle} flex-col justify-center text-gray-6 capitalize`}>
       <h3 className="uppercase text-gray-6 tracking-widest font-medium text-sm">
-        Vehicle Info
+        Vehicle
       </h3>
       <h3 className="flex dark:text-gray-1 text-dark-1 text-3xl font-bold leading-normal md:leading-normal whitespace-nowrap mb-4">
         Details

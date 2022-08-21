@@ -40,12 +40,3 @@ const ImageGallery = ({ vehicle }: Props) => {
 };
 
 export default ImageGallery;
-
-/* 
-<h1 className="uppercase text-gray-6 tracking-widest font-medium text-sm">
-images section
-</h1>
-<h3 className="dark:text-gray-1 text-dark-1 text-3xl md:text-4xl font-bold leading-normal md:leading-normal whitespace-nowrap mb-4">
-{vehicleDetails.model} Gallery
-</h3> 
-*/

@@ -1,10 +1,8 @@
-import { InfoModal } from "components";
 import { ThemeProvider } from "next-themes";
 import Head from "next/head";
 import { ReactNode } from "react";
 import { RecoilRoot } from "recoil";
-import Footer from "./Footer";
-import Navbar from "./Navbar";
+import { Footer, InfoModal, Navbar } from ".";
 
 interface Props {
   children: ReactNode;
