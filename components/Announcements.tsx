@@ -12,13 +12,13 @@ const Announcements = ({ vehicle }: Props) => {
     <>
       {announce.length || remarks.length ? (
         <section>
-          <h3 className="uppercase text-gray-6 tracking-widest font-medium text-sm">
+          <h3 className="uppercase text-gray-6 tracking-widest font-medium text-sm md:text-base">
           Notes
           </h3>
-          <h3 className="flex dark:text-gray-1 text-dark-1 text-3xl font-bold leading-normal md:leading-normal whitespace-nowrap mb-4">
+          <h3 className="flex dark:text-gray-1 text-dark-1 text-2xl md:text-3xl font-bold leading-normal md:leading-normal whitespace-nowrap mb-4">
             Remarks
           </h3>
-          <div className="mb-8 space-y-8">
+          <div className="space-y-8">
             {announce?.length > 0 && <OffsiteNotes notes={announce} />}
             {remarks?.length > 0 && <OffsiteNotes remarks={remarks} />}
           </div>

@@ -37,7 +37,7 @@ const VehiclePage = ({ vehicle }: Props) => {
         </section>
         {/* Vehicle Details & Annnouncements */}
         <div className="col-span-1 md:col-span-5">
-          <div className="md:sticky md:top-20 md:mb-8 space-y-8">
+          <div className="md:sticky md:top-20 md:mb-4 space-y-8">
             <VehicleDetails vehicle={vehicle} sectionStyle="hidden md:flex" />
             <Announcements vehicle={vehicle} />
           </div>

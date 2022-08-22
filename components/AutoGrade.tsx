@@ -18,7 +18,7 @@ const AutoGrade = ({ vehicle: { grade } }: Props) => {
               : "text-gray-6"
           }`}
         />
-        <p className="text-xs font-monty text-gray-6 leading-none -mt-0.5">
+        <p className="text-xs font-monty text-gray-6 leading-none ">
           {grade?.description}
         </p>
         <div

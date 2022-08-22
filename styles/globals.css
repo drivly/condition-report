@@ -26,10 +26,13 @@
   }
 
   .inspectionLinks {
-    @apply font-semibold text-[11px] dark:hover:text-gray-1 transition-all transform duration-150 active:brightness-110 hover:bg-green-accent hover:border-green-accent rounded-xl hover:text-gray-1 flex items-center h-8 border-gray-6/20 border;
+    @apply font-medium text-sm md:text-base dark:hover:text-gray-1 transition-all transform duration-150 active:brightness-110 hover:bg-green-accent hover:border-green-accent rounded-xl hover:text-gray-1 flex items-center border-gray-6/70 border p-2;
   }
 
   .activeInspectionLinks {
-    @apply text-dark-1 dark:text-gray-1 hover:border-green-accent dark:hover:bg-green-accent border-dark-1/50 dark:border-gray-1/30 border bg-gray-100 dark:bg-dark-3 shadow-md
+    @apply text-gray-1 hover:border-green-accent  border-green-accent border bg-green-accent shadow-md
+  }
+  .inspectionDamage {
+    @apply text-sm py-1 whitespace-nowrap flex items-center transition-all transform duration-150 ease-out
   }
 }

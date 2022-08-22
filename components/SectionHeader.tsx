@@ -23,14 +23,14 @@ const SectionHeader = ({ vehicle }: Props) => {
 
   return (
     <section ref={sectionRef}>
-      <h3 className="uppercase text-gray-6 tracking-widest font-medium text-sm">
+      <h3 className="uppercase text-gray-6 tracking-widest font-medium text-sm md:text-base">
         Filters
       </h3>
-      <h3 className="dark:text-gray-1 text-dark-1 text-3xl font-bold leading-normal md:leading-normal whitespace-nowrap pb-4">
+      <h3 className="dark:text-gray-1 text-dark-1 text-2xl md:text-3xl font-bold leading-normal md:leading-normal whitespace-nowrap pb-4">
         Inspection
       </h3>
-      <div className="py-4 border-b-4 border-t-4 border-gray-6/20 justify-between dark:bg-gray-5/5 bg-gray-2/5">
-        <ul className="flex flex-0 flex-wrap max-w-2xl gap-x-2 mx-auto">
+      <div className="pb-2 border-b-4 border-gray-6/20 justify-between">
+        <ul className="flex flex-0 flex-wrap gap-x-2 md:gap-x-4 mx-auto">
           {filteredSections.map((section, i) => {
             return (
               <li

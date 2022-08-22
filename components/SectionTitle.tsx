@@ -11,7 +11,7 @@ const SectionTitle = ({ heading, title, grade }: Props) => {
     <header className="flex flex-col md:flex md:flex-row md:items-center md:space-x-10 w-full">
       <div className="flex flex-1 justify-between items-center tracking-widest">
         <div className="">
-          <h1 className="uppercase text-gray-6 font-medium text-sm">
+          <h1 className="uppercase text-gray-6 font-medium text-sm md:text-base">
             {heading}
           </h1>
           <h3 className="dark:text-gray-1 text-dark-1 text-3xl font-bold leading-normal md:leading-normal whitespace-nowrap">

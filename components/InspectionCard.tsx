@@ -18,20 +18,21 @@ const InspectionCard = ({ vehicle }: Props) => {
   const sections = inspectionSections[sectionValue.index]?.responses;
 
   return (
-    <section className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-4 overflow-x-hidden px-4">
-      {sections?.map((res) => {
+    <section className="grid grid-cols-2 gap-y-4 text-sm font-monty font-medium">
+      {sections?.map((res, i) => {
         let answers = res?.answers[0];
         let damages = answers?.notes || answers?.answer?.noteLabel;
-
         return (
           <div
             key={res.guid}
-            className="flex flex-col justify-between space-y-2 gap-x-2 text-sm">
+            className={`${
+              sections.length - 1 === i && "border-none"
+            } flex justify-between col-span-2 border-b border-gray-6/30 pb-4 text-gray-6`}>
             {/* responses question */}
-            <p className="font-monty font-medium truncate">
+            <p className="truncate">
               {res?.question?.buyerTranslation || "Not Listed"}
             </p>
-            <div className="flex items-center">
+            <div className="flex items-center -my-2">
               <p
                 onClick={
                   damages
@@ -45,9 +46,9 @@ const InspectionCard = ({ vehicle }: Props) => {
                 }
                 className={`${
                   res?.answers[0]?.answer?.connotation === -1
-                    ? "text-red-600 hover:bg-red-600 hover:text-gray-1 cursor-pointer flex rounded-full"
-                    : "text-green-accent"
-                } font-semibold text-sm px-4 py-2`}>
+                    ? "text-red-600 hover:bg-red-600 hover:text-gray-1 cursor-pointer  rounded-xl hover:px-2"
+                    : "text-dark-1 dark:text-gray-1"
+                } inspectionDamage`}>
                 {truncate(res?.answers[0]?.answer.value, 17) || "No Comments"}
                 {damages && (
                   <span>
