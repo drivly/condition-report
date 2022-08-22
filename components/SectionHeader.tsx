@@ -35,7 +35,7 @@ const SectionHeader = ({ vehicle }: Props) => {
             return (
               <li
                 key={i}
-                className="cursor-pointer my-1 relative"
+                className="cursor-pointer mb-3 relative rounded-xl"
                 onClick={() => handleClick(section.name, i)}>
                 <p
                   className={`inspectionLinks group ${
