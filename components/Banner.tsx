@@ -1,3 +1,6 @@
+import { fadeInDown } from "animations";
+import { motion } from "framer-motion";
+import useFramer from "hooks/useFramer";
 import Image from "next/image";
 import { ReactNode } from "react";
 
@@ -9,6 +12,7 @@ interface Props {
 }
 
 const Banner = ({ bannerText, wrapperStyle, bodyStyle, image }: Props) => {
+  const [setRefs, ctrls, animation] = useFramer(fadeInDown);
   return (
     <div
       className={`relative w-full flex items-center bg-gradient-to-tr from-dark to-green-accent z-0 overflow-hidden ${wrapperStyle}`}>
@@ -17,7 +21,7 @@ const Banner = ({ bannerText, wrapperStyle, bodyStyle, image }: Props) => {
           <Image
             src="https://res.cloudinary.com/dtram9qiy/image/upload/v1660503590/my-upload/bmiduxmijdh4uokdv7tm.jpg"
             alt="poster of cars"
-            placeholder='blur'
+            placeholder="blur"
             blurDataURL="https://res.cloudinary.com/dtram9qiy/image/upload/v1660503590/my-upload/bmiduxmijdh4uokdv7tm.jpg"
             layout="fill"
             objectFit="cover"
@@ -34,7 +38,15 @@ const Banner = ({ bannerText, wrapperStyle, bodyStyle, image }: Props) => {
         </>
       )}
       <div className="h-96 bg-gradient-to-l from-transparent to-black/70 absolute w-full bottom-0 right-0" />
-      <h1 className={`font-bold text-4xl ${bodyStyle}`}>{bannerText}</h1>
+      <motion.div
+        ref={setRefs}
+        initial="hidden"
+        aria-hidden="true"
+        animate={ctrls}
+        variants={animation}
+        className={`font-bold text-4xl ${bodyStyle}`}>
+        {bannerText}
+      </motion.div>
       <div className="absolute w-48 h-48 sm:w-32 sm:h-32 rounded-full bg-white/20 -top-9 -left-16 -z-5" />
       <div className="absolute w-72 h-72 sm:w-56 sm:h-56 rounded-full bg-white/20 -bottom-24 -right-14 -z-5" />
     </div>

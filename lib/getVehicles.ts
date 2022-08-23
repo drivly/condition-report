@@ -1,5 +1,5 @@
 import vehicles from "./vehicles.json"
 
-export const getVehicles = async() => {
+export async function getVehicles() {
   return vehicles
 }
