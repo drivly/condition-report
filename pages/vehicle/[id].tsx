@@ -26,11 +26,11 @@ const VehiclePage = ({ vehicle }: Props) => {
       </Head>
       {/* Vehicle Banner */}
 
-      <main className="mx-auto max-w-7xl grid grid-cols-1 md:gap-10 md:grid-cols-12 py-16 mb-8">
+      <main className="mx-auto max-w-5xl grid grid-cols-1 md:gap-10 md:grid-cols-12 py-12 mb-8">
         {/* Main Feed */}
-        <section className="col-span-1 md:col-span-6">
+        <section className="col-span-1 md:col-span-7">
           {/* Left Side*/}
-          <VehicleTitle vehicle={vehicle} sectionStyle="mb-8" />
+          {/* <VehicleTitle vehicle={vehicle} sectionStyle="mb-8" /> */}
           <ImageGallery vehicle={vehicle} sectionStyle="mb-16" />
           {/* Show on Mobile up to md */}
           <VehicleDetails vehicle={vehicle} sectionStyle="md:hidden mb-16" />
@@ -39,8 +39,9 @@ const VehiclePage = ({ vehicle }: Props) => {
           <InspectionCard vehicle={vehicle} />
         </section>
         {/* Vehicle Details & Annnouncements */}
-        <div className="col-span-1 md:col-span-6">
+        <div className="col-span-1 md:col-span-5">
           <div className="md:sticky md:top-[137px] md:mb-4 space-y-16">
+            <VehicleTitle vehicle={vehicle} sectionStyle="mb-8" />
             <VehicleDetails vehicle={vehicle} sectionStyle="hidden md:flex" />
             <Announcements vehicle={vehicle} />
           </div>

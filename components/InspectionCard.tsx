@@ -46,7 +46,7 @@ const InspectionCard = ({ vehicle }: Props) => {
                 }
                 className={`${
                   res?.answers[0]?.answer?.connotation === -1
-                    ? "text-red-600 hover:bg-red-600 hover:text-gray-1 cursor-pointer  rounded-xl hover:px-2"
+                    ? "text-red-600 hover:bg-red-600 hover:text-gray-1 cursor-pointer rounded-md hover:px-2"
                     : "text-dark-1 dark:text-gray-1"
                 } inspectionDamage`}>
                 {truncate(res?.answers[0]?.answer.value, 17) || "No Comments"}
