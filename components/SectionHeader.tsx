@@ -32,7 +32,7 @@ const SectionHeader = ({ vehicle, sectionStyle }: Props) => {
             return (
               <li
                 key={i}
-                className="cursor-pointer mb-3 relative rounded-xl"
+                className="cursor-pointer mb-3 relative rounded-md"
                 onClick={() => handleClick(section.name, i)}>
                 <p
                   className={`inspectionLinks group ${

@@ -14,11 +14,11 @@ const ImageGallery = ({ vehicle, sectionStyle }: Props) => {
   return (
     <section className={sectionStyle}>
       {/* main image */}
-      <div className="flex justify-center rounded-2xl bg-gray-1 sm:shadow-lg dark:bg-dark-3">
+      <div className="flex justify-center rounded-md bg-gray-1 sm:shadow-lg dark:bg-dark-3">
         <img
           src={images[index]}
           alt={vehicleDetails.model}
-          className="object-cover rounded-2xl"
+          className="object-cover rounded-lg"
         />
       </div>
       {/* thumb images to select main image */}
@@ -30,7 +30,7 @@ const ImageGallery = ({ vehicle, sectionStyle }: Props) => {
               layout="fixed"
               height="100px"
               width="150px"
-              className="rounded-xl"
+              className="rounded-md"
               alt={vehicleDetails.model}
             />
           </div>

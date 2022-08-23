@@ -16,6 +16,12 @@ const VehicleDetails = ({
     <div className={`${sectionStyle} flex-col justify-center text-gray-6`}>
       <SectionTitle heading="Vehicle" title="Details" />
       <div className="grid grid-cols-2 gap-y-4 text-sm font-monty font-medium capitalize">
+        
+        <div className="flex justify-between col-span-2 border-b border-gray-6/30 pb-4">
+          <p>VIN</p>
+          <p className="text-dark-1 dark:text-gray-1">{vehicleDetails.vin}</p>
+        </div>
+
         <div className="flex justify-between col-span-2 border-b border-gray-6/30 pb-4">
           <p className="flex items-center">Engine</p>
           <p className="text-dark-1 dark:text-gray-1">
@@ -36,12 +42,6 @@ const VehicleDetails = ({
           <p className="text-dark-1 dark:text-gray-1">
             {formatVehicleDetails(vehicleDetails.transmission)}
           </p>
-        </div>
-
-        <div className="flex justify-between col-span-2 border-b border-gray-6/30 pb-4">
-          <p>VIN</p>
-
-          <p className="text-dark-1 dark:text-gray-1">{vehicleDetails.vin}</p>
         </div>
 
         <div className="flex justify-between col-span-2 border-b border-gray-6/30 pb-4">
