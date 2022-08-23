@@ -13,7 +13,7 @@ const OffsiteNotes = ({ notes, remarks }: Props) => {
   return (
     <div className="max-w-full">
       <div className="w-full">
-        <Disclosure>
+        <Disclosure defaultOpen>
           {({ open }) => (
             <>
               <Disclosure.Button className="flex justify-between items-center rounded-lg w-full border border-green-accent bg-green-accent px-4 py-2 text-left text-sm md:text-base font-medium text-gray-1 hover:brightness-110 focus:outline-none focus-visible:ring focus-visible:ring-blue-500 focus-visible:ring-opacity-75">
@@ -29,7 +29,7 @@ const OffsiteNotes = ({ notes, remarks }: Props) => {
                   />
                 </div>
               </Disclosure.Button>
-              <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm p-2 sm:p-4 mt-2 mb-4 rounded-lg bg-gray-200 dark:bg-dark-3 text-dark-1 dark:text-gray-1">
+              <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm p-2 sm:p-4 mt-2 mb-4 rounded-lg bg-gray-200 dark:bg-dark-1 text-dark-1 dark:text-gray-1">
                 {!data?.length
                   ? "Nothing to see here"
                   : data?.map((item, i) => <p key={i}>{item}</p>)}

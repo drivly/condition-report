@@ -4,14 +4,15 @@ import { Vehicle } from "typings";
 
 interface Props {
   vehicle: Vehicle;
+  sectionStyle?: string
 }
 
-const ImageGallery = ({ vehicle }: Props) => {
+const ImageGallery = ({ vehicle, sectionStyle }: Props) => {
   const [index, setIndex] = useState<number>(0);
   const { vehicleDetails, images } = vehicle;
 
   return (
-    <section>
+    <section className={sectionStyle}>
       {/* main image */}
       <div className="flex justify-center rounded-2xl bg-gray-1 sm:shadow-lg dark:bg-dark-3">
         <img

@@ -26,21 +26,21 @@ const VehiclePage = ({ vehicle }: Props) => {
       </Head>
       {/* Vehicle Banner */}
 
-      <main className="mx-auto max-w-7xl grid grid-cols-1 md:gap-10 md:grid-cols-12 pt-14 mb-8 pb-6">
+      <main className="mx-auto max-w-7xl grid grid-cols-1 md:gap-10 md:grid-cols-12 py-16 mb-8">
         {/* Main Feed */}
-        <section className="col-span-1 md:col-span-7 space-y-8">
+        <section className="col-span-1 md:col-span-6">
           {/* Left Side*/}
-          <VehicleTitle vehicle={vehicle} />
-          <ImageGallery vehicle={vehicle} />
+          <VehicleTitle vehicle={vehicle} sectionStyle="mb-8" />
+          <ImageGallery vehicle={vehicle} sectionStyle="mb-16" />
           {/* Show on Mobile up to md */}
-          <VehicleDetails vehicle={vehicle} sectionStyle="md:hidden" />
+          <VehicleDetails vehicle={vehicle} sectionStyle="md:hidden mb-16" />
           {/* Need to Gather damages and display for each section */}
-          <SectionHeader vehicle={vehicle} />
+          <SectionHeader vehicle={vehicle} sectionStyle="mb-8" />
           <InspectionCard vehicle={vehicle} />
         </section>
         {/* Vehicle Details & Annnouncements */}
-        <div className="col-span-1 md:col-span-5">
-          <div className="md:sticky md:top-20 md:mb-4 space-y-8">
+        <div className="col-span-1 md:col-span-6">
+          <div className="md:sticky md:top-[137px] md:mb-4 space-y-16">
             <VehicleDetails vehicle={vehicle} sectionStyle="hidden md:flex" />
             <Announcements vehicle={vehicle} />
           </div>

@@ -1,6 +1,7 @@
 import { Vehicle } from "typings";
 import formatVehicleDetails from "utils/formatVehicleDetails";
 import { TbEngine } from "react-icons/tb";
+import SectionTitle from "./SectionTitle";
 
 interface Props {
   vehicle: Vehicle;
@@ -12,15 +13,9 @@ const VehicleDetails = ({
   sectionStyle,
 }: Props) => {
   return (
-    <div
-      className={`${sectionStyle} flex-col justify-center text-gray-6 capitalize`}>
-      <h3 className="uppercase text-gray-6 tracking-widest font-medium text-sm md:text-base">
-        Vehicle
-      </h3>
-      <h3 className="flex dark:text-gray-1 text-dark-1 text-2xl md:text-3xl font-bold leading-normal md:leading-normal whitespace-nowrap mb-4">
-        Details
-      </h3>
-      <div className="grid grid-cols-2 gap-y-4 text-sm font-monty font-medium">
+    <div className={`${sectionStyle} flex-col justify-center text-gray-6`}>
+      <SectionTitle heading="Vehicle" title="Details" />
+      <div className="grid grid-cols-2 gap-y-4 text-sm font-monty font-medium capitalize">
         <div className="flex justify-between col-span-2 border-b border-gray-6/30 pb-4">
           <p className="flex items-center">Engine</p>
           <p className="text-dark-1 dark:text-gray-1">
@@ -73,7 +68,7 @@ const VehicleDetails = ({
           </p>
         </div>
 
-        <div className="pt-2 flex justify-between col-span-2">
+        <div className="pt-2 flex justify-between col-span-2 pb-4">
           <p>Seller</p>
 
           <p className="text-dark-1 dark:text-gray-1">

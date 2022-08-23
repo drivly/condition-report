@@ -7,8 +7,8 @@ interface Props {
 
 const TitleInfo = ({ vehicle: { titleInformation } }: Props) => {
   return (
-    <div className="absolute bottom-1 right-0 text-sm leading-[0.9]">
-      <p className="capitalize font-bold dark:text-gray-1 text-dark-1 tracking-widest">
+    <div className="absolute bottom-2 right-0 text-sm lg:text-base leading-[0.9]">
+      <p className="capitalize dark:text-gray-1 text-dark-1 tracking-wide">
         Title<span className="text-green-accent"> • </span>
         {formatVehicleDetails(titleInformation.status) || "Missing"}
         <span className="text-green-accent"> • </span>

@@ -38,15 +38,15 @@ const Banner = ({ bannerText, wrapperStyle, bodyStyle, image }: Props) => {
         </>
       )}
       <div className="h-96 bg-gradient-to-l from-transparent to-black/70 absolute w-full bottom-0 right-0" />
-      <motion.div
+      <motion.h1
         ref={setRefs}
         initial="hidden"
         aria-hidden="true"
         animate={ctrls}
         variants={animation}
-        className={`font-bold text-4xl ${bodyStyle}`}>
+        className={`font-bold text-3xl ${bodyStyle}`}>
         {bannerText}
-      </motion.div>
+      </motion.h1>
       <div className="absolute w-48 h-48 sm:w-32 sm:h-32 rounded-full bg-white/20 -top-9 -left-16 -z-5" />
       <div className="absolute w-72 h-72 sm:w-56 sm:h-56 rounded-full bg-white/20 -bottom-24 -right-14 -z-5" />
     </div>

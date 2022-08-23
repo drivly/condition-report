@@ -1,5 +1,5 @@
 import { Vehicle } from "typings";
-import { OffsiteNotes } from ".";
+import { OffsiteNotes, SectionTitle } from ".";
 
 interface Props {
   vehicle: Vehicle;
@@ -11,13 +11,8 @@ const Announcements = ({ vehicle }: Props) => {
   return (
     <>
       {announce.length || remarks.length ? (
-        <section>
-          <h3 className="uppercase text-gray-6 tracking-widest font-medium text-sm md:text-base">
-          Notes
-          </h3>
-          <h3 className="flex dark:text-gray-1 text-dark-1 text-2xl md:text-3xl font-bold leading-normal md:leading-normal whitespace-nowrap mb-4">
-            Remarks
-          </h3>
+        <section className="bg-white dark:bg-dark-3 shadow-md py-8 px-6 rounded-md">
+          <SectionTitle heading="Notes" title="Comments"  />
           <div className="space-y-8">
             {announce?.length > 0 && <OffsiteNotes notes={announce} />}
             {remarks?.length > 0 && <OffsiteNotes remarks={remarks} />}

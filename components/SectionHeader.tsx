@@ -3,12 +3,14 @@ import { DamageCount } from "components";
 import { useRef } from "react";
 import { Vehicle } from "typings";
 import getDamageCount from "utils/getDamageCount";
+import { SectionTitle } from "."
 
 interface Props {
   vehicle: Vehicle;
+  sectionStyle?: string
 }
 
-const SectionHeader = ({ vehicle }: Props) => {
+const SectionHeader = ({ vehicle, sectionStyle }: Props) => {
   const { inspectionSections } = vehicle;
   const [sectionValue, setSectionValue] = useSectionState();
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -22,15 +24,10 @@ const SectionHeader = ({ vehicle }: Props) => {
   const filteredSections = getDamageCount(inspectionSections);
 
   return (
-    <section ref={sectionRef}>
-      <h3 className="uppercase text-gray-6 tracking-widest font-medium text-sm md:text-base">
-        Filters
-      </h3>
-      <h3 className="dark:text-gray-1 text-dark-1 text-2xl md:text-3xl font-bold leading-normal md:leading-normal whitespace-nowrap pb-4">
-        Inspection
-      </h3>
+    <section ref={sectionRef} className={sectionStyle}>
+      <SectionTitle heading="Filters" title="Inspection"  />
       <div className="pb-2 border-b-4 border-gray-6/20 justify-between">
-        <ul className="flex flex-0 flex-wrap gap-x-2 md:gap-x-4 mx-auto">
+        <ul className="flex flex-0 flex-wrap gap-x-2 lg:gap-x-4 mx-auto">
           {filteredSections.map((section, i) => {
             return (
               <li
