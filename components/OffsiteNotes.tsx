@@ -16,10 +16,10 @@ const OffsiteNotes = ({ notes, remarks }: Props) => {
         <Disclosure defaultOpen>
           {({ open }) => (
             <>
-              <Disclosure.Button className="flex justify-between items-center rounded-lg w-full border border-green-accent bg-green-accent px-4 py-2 text-left text-sm md:text-base font-medium text-gray-1 hover:brightness-110 focus:outline-none focus-visible:ring focus-visible:ring-blue-500 focus-visible:ring-opacity-75">
+              <Disclosure.Button className="offsiteNotesButton group">
                 <span>{notes ? "Announcements" : "Notes/Remarks"}</span>
                 <div className="flex items-center">
-                  <span className="mr-1 h-4 w-4 bg-gray-1 text-green-accent flex items-center justify-center rounded-full font-semibold text-xs animate-pulse transtion-all duration-150 ease-out group-hover:animate-none">
+                  <span className="mr-1 h-5 w-5 bg-gray-1 text-dark-1 flex items-center justify-center rounded-full font-medium text-base animate-pulse transtion-all duration-150 ease-out group-hover:animate-none">
                     {notes?.length || remarks?.length}
                   </span>
                   <ChevronUpIcon
@@ -29,7 +29,7 @@ const OffsiteNotes = ({ notes, remarks }: Props) => {
                   />
                 </div>
               </Disclosure.Button>
-              <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm p-2 sm:p-4 mt-2 mb-4 rounded-lg bg-gray-200 dark:bg-dark-1 text-dark-1 dark:text-gray-1">
+              <Disclosure.Panel className="text-sm p-4 mt-2 mb-4 rounded-lg bg-gray-200 dark:bg-dark-1 text-dark-1 dark:text-gray-1">
                 {!data?.length
                   ? "Nothing to see here"
                   : data?.map((item, i) => <p key={i}>{item}</p>)}

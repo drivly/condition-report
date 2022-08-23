@@ -38,7 +38,7 @@ const SectionHeader = ({ vehicle, sectionStyle }: Props) => {
                   className={`inspectionLinks group ${
                     sectionValue.name === section.name
                       ? "activeInspectionLinks "
-                      : "text-gray-6"
+                      : "text-gray-6 dark:bg-dark-1 dark:hover:bg-green-accent"
                   }`}>
                   <span className="px-2">
                     {section?.name.replace(

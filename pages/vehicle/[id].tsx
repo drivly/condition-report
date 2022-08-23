@@ -24,24 +24,29 @@ const VehiclePage = ({ vehicle }: Props) => {
         <title>Condition Report</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/* Vehicle Banner */}
 
-      <main className="mx-auto max-w-7xl grid grid-cols-1 md:gap-10 md:grid-cols-12 py-16 mb-8">
-        {/* Main Feed */}
-        <section className="col-span-1 md:col-span-6">
+      <main className="mx-auto max-w-7xl grid grid-cols-1 md:gap-8 md:grid-cols-7 py-16 mb-8">
+        <section className="col-span-1 md:col-span-4">
           {/* Left Side*/}
           <VehicleTitle vehicle={vehicle} sectionStyle="mb-8" />
           <ImageGallery vehicle={vehicle} sectionStyle="mb-16" />
           {/* Show on Mobile up to md */}
-          <VehicleDetails vehicle={vehicle} sectionStyle="md:hidden mb-16" />
-          {/* Need to Gather damages and display for each section */}
-          <SectionHeader vehicle={vehicle} sectionStyle="mb-8" />
-          <InspectionCard vehicle={vehicle} />
+          <VehicleDetails
+            vehicle={vehicle}
+            sectionStyle="md:hidden mb-16 bg-white dark:bg-black-2 shadow-md py-8 px-4 lg:px-6 rounded-md"
+          />
+          <div className="bg-white dark:bg-black-2 shadow-md py-8 px-4 lg:px-6 rounded-md">
+            <SectionHeader vehicle={vehicle} sectionStyle="mb-8" />
+            <InspectionCard vehicle={vehicle} />
+          </div>
         </section>
         {/* Vehicle Details & Annnouncements */}
-        <div className="col-span-1 md:col-span-6">
-          <div className="md:sticky md:top-[137px] md:mb-4 space-y-16">
-            <VehicleDetails vehicle={vehicle} sectionStyle="hidden md:flex" />
+        <div className="col-span-1 md:col-span-3">
+          <div className="md:sticky md:top-[137px]  space-y-16">
+            <VehicleDetails
+              vehicle={vehicle}
+              sectionStyle="hidden md:flex bg-white dark:bg-black-2 shadow-md py-8 px-4 lg:px-6 md:rounded-md"
+            />
             <Announcements vehicle={vehicle} />
           </div>
         </div>

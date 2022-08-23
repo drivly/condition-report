@@ -11,7 +11,7 @@ const Announcements = ({ vehicle }: Props) => {
   return (
     <>
       {announce.length || remarks.length ? (
-        <section className="bg-white dark:bg-dark-3 shadow-md py-8 px-6 rounded-md">
+        <section className="bg-white dark:bg-black-2 shadow-md py-8 px-4 lg:px-6 rounded-md">
           <SectionTitle heading="Notes" title="Comments"  />
           <div className="space-y-8">
             {announce?.length > 0 && <OffsiteNotes notes={announce} />}
