@@ -1,58 +1,85 @@
-import { BadgeCheckIcon } from "@heroicons/react/outline";
-import axios from "axios";
 import {
-  ImageGallery, InspectionCard, ManexIcon, OffsiteNotes,
-  SectionHeader, SectionTitle, TitleInfo, VehicleDetails
+  Announcements,
+  ImageGallery,
+  InspectionCard,
+  SectionHeader,
+  VehicleDetails,
+  VehicleTitle,
 } from "components";
-import { GetServerSideProps, GetServerSidePropsContext, GetStaticProps } from "next";
+import { getVehicleById } from "lib/getVehicleById";
+import { getVehicles } from "lib/getVehicles";
+import { GetStaticProps } from "next";
+import { Params } from "next/dist/shared/lib/router/utils/route-matcher";
+import Head from "next/head";
 import { Vehicle } from "typings";
-import baseUrl from "utils/baseUrl";
 
 interface Props {
   vehicle: Vehicle;
 }
 
 const VehiclePage = ({ vehicle }: Props) => {
-  const { grade, vehicleDetails } = vehicle;
-
   return (
-    <main className="pt-12 max-w-4xl mx-auto relative mb-12 pb-6">
-      {vehicle.metaData && <ManexIcon vehicle={vehicle} />}
-      <section className="sm:flex sm:space-x-8 justify-between border-b pb-8 border-gray-6 relative">
-        <SectionTitle
-          heading="Condition Report"
-          title={
-            <>
-              {vehicleDetails.year} {vehicleDetails.make} <br />
-              {vehicleDetails.model} {vehicleDetails.trim}
-            </>
-          }
-          Icon={BadgeCheckIcon}
-          grade={grade}
-        />
-        <VehicleDetails vehicle={vehicle} />
-        <TitleInfo vehicle={vehicle} />
-      </section>
-      <div className="flex flex-row justify-evenly mt-10 mb-8 gap-x-4">
-        <OffsiteNotes notes={vehicle.offsiteAnnouncements} />
-        <OffsiteNotes remarks={vehicle.offsiteRemarks} />
-      </div>
-      <ImageGallery vehicle={vehicle} />
-      <SectionHeader vehicle={vehicle} />
-      <InspectionCard vehicle={vehicle} />
-    </main>
+    <div className="min-h-screen">
+      <Head>
+        <title>Condition Report</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      {/* Vehicle Banner */}
+
+      <main className="mx-auto max-w-7xl grid grid-cols-1 md:gap-10 md:grid-cols-12 py-16 mb-8">
+        {/* Main Feed */}
+        <section className="col-span-1 md:col-span-6">
+          {/* Left Side*/}
+          <VehicleTitle vehicle={vehicle} sectionStyle="mb-8" />
+          <ImageGallery vehicle={vehicle} sectionStyle="mb-16" />
+          {/* Show on Mobile up to md */}
+          <VehicleDetails vehicle={vehicle} sectionStyle="md:hidden mb-16" />
+          {/* Need to Gather damages and display for each section */}
+          <SectionHeader vehicle={vehicle} sectionStyle="mb-8" />
+          <InspectionCard vehicle={vehicle} />
+        </section>
+        {/* Vehicle Details & Annnouncements */}
+        <div className="col-span-1 md:col-span-6">
+          <div className="md:sticky md:top-[137px] md:mb-4 space-y-16">
+            <VehicleDetails vehicle={vehicle} sectionStyle="hidden md:flex" />
+            <Announcements vehicle={vehicle} />
+          </div>
+        </div>
+      </main>
+    </div>
   );
 };
 
 export default VehiclePage;
 
+export const getStaticPaths = async () => {
+  const vehicles = await getVehicles();
 
-export const getServerSideProps = async ({params}: GetServerSidePropsContext) => {
-  const vehicle = await axios
-    .get(`${baseUrl}/api/vehicles/${params?.id}`)
-    .then((res) => res.data);
+  const paths = vehicles.map((vehicle: any | Vehicle) => ({
+    params: {
+      id: vehicle.id,
+    },
+  }));
 
   return {
-    props: { vehicle  }
+    paths,
+    fallback: false,
+  };
+};
+
+export const getStaticProps: GetStaticProps = async ({ params }: Params) => {
+  const vehicle = await getVehicleById(params?.id);
+
+  console.log(vehicle);
+
+  if (!vehicle) {
+    return {
+      notFound: true,
+    };
+  }
+
+  return {
+    props: { vehicle },
+    revalidate: 60,
   };
 };

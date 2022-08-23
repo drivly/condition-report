@@ -15,6 +15,7 @@ module.exports = {
         'gray-5': '#535658',
         'gray-6': '#8a8f98',
         'green-accent': '#00CAB9',
+        'dirty-yellow': '#CDC50A',
         'overlay-black': 'rgba(0, 0, 0, 0.8)',
         'dark-1': '#060611',
         'dark-2': '#2D2E36',

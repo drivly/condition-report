@@ -1,4 +1,3 @@
 export default function formatVehicleDetails(input: string) {
-  input = input.toLowerCase().replace(/_/g, " ")
-  return input
+  return input.toLowerCase().replace(/_/g, " ")
 }
